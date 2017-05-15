@@ -1,0 +1,15 @@
+# Monogram - Jekyll Configuration
+# ---------------------------------------------------------
+
+# Build settings
+source: _source
+destination: _deploy
+permalink: pretty
+markdown: kramdown
+# incremental: true #enable for large sites
+exclude:
+  - main.built.js
+
+gems:
+  - jekyll-email-protect
+  - jekyll-last-modified-at
