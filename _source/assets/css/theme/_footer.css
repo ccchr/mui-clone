@@ -1,0 +1,80 @@
+
+/*----------------------------------------------
+
+8. FOOTER
+
+------------------------------------------------*/
+
+footer {
+	width: 100%;
+	background: #f5f6f7;
+	position: relative;
+	border-top: 1px solid #e0e0e0;
+}
+
+footer.footer-dark {
+	background: $dark;
+	border: 0;
+}
+
+footer.footer-custom {
+	background: none;
+	;
+	border: none;
+}
+
+footer .footer-inner {
+	padding: 100px 0;
+	.column-section {
+		display: flex;
+	}
+}
+
+footer .copyright {
+	border-top: 1px solid rgba(0, 0, 0, .10);
+	text-align: center;
+	padding: 30px 0;
+	line-height: 20px;
+}
+
+.text-light .copyright {
+	border-color: rgba(255, 255, 255, .15);
+}
+
+footer #backtotop {
+	text-align: center;
+	font-size: 11px;
+	font-family: "Montserrat";
+	font-weight: 400;
+	line-height: 20px;
+	position: fixed;
+	bottom: 40px;
+	right: -1px;
+	width: auto;
+	transition: all 0.3s ease;
+	z-index: 100;
+	color: #ffffff;
+	background: #0f0f0f;
+	padding: 10px 15px;
+	transform: translateX(100%);
+}
+
+footer #backtotop.visible {
+	right: 40px;
+}
+
+footer #backtotop.visible:hover {
+	transform: translateX(0%);
+	right: 0px;
+}
+
+footer #backtotop:before {
+	text-align: center;
+	content: "\f126";
+	font-family: "Ionicons";
+	font-size: 10px;
+	line-height: 20px;
+	height: 10px;
+	width: 10px;
+	margin: 0 15px 0 1px;
+}

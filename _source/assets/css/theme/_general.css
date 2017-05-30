@@ -1,0 +1,146 @@
+
+/*----------------------------------------------
+
+2. GENERAL ELEMENTS
+
+------------------------------------------------*/
+
+body.page-boxed {
+	background: #f5f6f7;
+}
+
+body.page-boxed #page-content {
+	width: 1280px;
+	margin: 0 auto;
+	background: #ffffff;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+#page-content {
+	overflow: hidden;
+	margin: 0;
+	min-width: 1200px;
+	max-width: 100%;
+}
+
+#page-body {
+	padding-top: 100px;
+	position: relative;
+}
+
+#page-body.notoppadding {
+	padding: 0;
+}
+
+#page-body:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+	height: 0;
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.wrapper-small {
+	width: 780px;
+	margin: 0 auto;
+}
+
+.wrapper:after,
+.wrapper-small:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+	height: 0;
+}
+
+.wrapper,
+.wrapper-small {
+	max-width: calc(100% - 80px);
+}
+
+.main-content {
+	width: calc(100% - 400px);
+}
+
+aside.sidebar {
+	width: 340px;
+	margin-right: 40px;
+}
+
+aside.sidebar.sidebar-grey,
+aside.sidebar.sidebar-grey::before {
+	background: #f5f6f7;
+	padding: 0 40px 100px 40px;
+	width: 320px;
+	margin: 0;
+}
+
+.notoppadding aside.sidebar.sidebar-grey {
+	padding-top: 100px;
+}
+
+aside.sidebar.sidebar-grey::before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+aside.sidebar.sidebar-grey.left-float::before {
+	left: 0;
+	right: auto;
+}
+
+.wrapper .sidebar {
+	margin-right: 0px;
+}
+
+.wrapper .sidebar.sidebar-grey {
+	padding: 30px;
+	width: 280px;
+}
+
+.wrapper .sidebar.sidebar-grey::before {
+	display: none;
+}
+
+aside.sidebar .sidebar-content {
+	position: relative;
+	z-index: 1;
+}
+
+.left-float {
+	float: left;
+}
+
+.right-float {
+	float: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.text-light {
+	color: rgba(255, 255, 255, .80);
+}
+
+.colored {
+	color: $accent !important;
+	opacity: 1 !important;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Lora:400italic,700italic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" id="default-style-css" href="../files/css/style.css" type="text/css" media="all"/>
+		<link rel="stylesheet" id="fontawesome-style-css" href="../files/css/font-awesome.min.css" type="text/css" media="all"/>
+		<link rel="stylesheet" id="ionic-icons-style-css" href="../files/css/ionicons.css" type="text/css" media="all"/>
+		<link rel="stylesheet" id="isotope-style-css" href="../files/css/isotope.css" type="text/css" media="all"/>
+		<link rel="stylesheet" id="owlcarousel-css" href="../files/css/owl.carousel.css" type="text/css" media="all"/>
+		<link rel="stylesheet" id="mqueries-style-css" href="../files/css/mqueries.css" type="text/css" media="all"/>
+		<link rel="shortcut icon" href="../files/uploads/favicon.png"/>
+		<title>{{ page.title }} // Monogram UI</title>
+	</head>
+	<body>
+		{% if page.loader != false %}
+		<!-- PAGELOADER -->
+		<div id="page-loader">
+			<div class="page-loader-inner">
+				<span class="loader-figure"></span>
+				<h6 class="loader-label">Loading</h6>
+				<img class="loader-logo" src="files/uploads/logo-sudo-scroll.png" srcset="files/uploads/logo-sudo-scroll.png 1x, files/uploads/logo-sudo-scroll@2x.png 2x" alt="Loader Logo">
+			</div>
+		</div>
+		{% endif %}
+		{{ content }}
+		<script src="../files/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../files/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="../files/js/jquery.visible.min.js"></script>
+		<script type="text/javascript" src="../files/js/tweenMax.js"></script>
+		<script type="text/javascript" src="../files/js/jquery.backgroundparallax.min.js"></script>
+		{% if page.libraries contains 'isotope' %}
+			<script type="text/javascript" src="../files/js/jquery.isotope.min.js"></script>
+		{% endif %}
+		<script type="text/javascript" src="../files/js/jquery.imagesloaded.min.js"></script>
+		{% if page.libraries contains 'owlcarousel' %}
+			<script type="text/javascript" src="../files/js/jquery.owl.carousel.js"></script>
+		{% endif %}
+		<script type="text/javascript" src="../files/js/script.js"></script>
+	</body>
+</html>

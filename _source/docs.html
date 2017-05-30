@@ -1,0 +1,10 @@
+---
+layout: default
+title: Monogram
+---
+<h1>Monogram UI</h1>
+<ul>
+	{% for page in site.pages %}
+	<li><a href="{{ page.url }}">{{ page.url }}</a></li>
+	{% endfor %}
+</ul>

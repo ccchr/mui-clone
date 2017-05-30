@@ -1,0 +1,38 @@
+#m {
+	svg,
+	p {
+		transition: opacity 1s ease;
+	}
+	svg {
+		width: 70px;
+		opacity: 0.2;
+		min-width: unset;
+		max-width: unset;
+	}
+	p {
+		margin: 0;
+		opacity: 0.5;
+		font-size: 14px;
+		color: #fff;
+		line-height: 1;
+	}
+	@media (min-width: 900px) {
+		&:hover {
+			svg,
+			p {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}

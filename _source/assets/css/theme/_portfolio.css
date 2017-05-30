@@ -1,0 +1,26 @@
+
+/*----------------------------------------------
+
+10. PORTFOLIO
+
+------------------------------------------------*/
+
+.portfolio-item .portfolio-desc {
+	margin-top: 15px;
+}
+
+.portfolio-item .portfolio-desc:first-child {
+	margin-top: 0px;
+}
+
+.portfolio-item .portfolio-desc .portfolio-name {
+	transition: all 0.2s ease;
+}
+
+.portfolio-item .portfolio-desc a:hover .portfolio-name {
+	color: #AC2430;
+}
+
+.portfolio-item .portfolio-desc .portfolio-category+.portfolio-name {
+	margin-top: 3px;
+}
