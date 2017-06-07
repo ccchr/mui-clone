@@ -10,8 +10,15 @@
 		<link rel="stylesheet" id="default-style-css" href="../files/css/style.css" type="text/css" media="all"/>
 		<link rel="stylesheet" id="fontawesome-style-css" href="../files/css/font-awesome.min.css" type="text/css" media="all"/>
 		<link rel="stylesheet" id="ionic-icons-style-css" href="../files/css/ionicons.css" type="text/css" media="all"/>
-		<link rel="stylesheet" id="isotope-style-css" href="../files/css/isotope.css" type="text/css" media="all"/>
-		<link rel="stylesheet" id="owlcarousel-css" href="../files/css/owl.carousel.css" type="text/css" media="all"/>
+		{% if page.libraries contains 'isotope' %}
+			<link rel="stylesheet" id="isotope-style-css" href="../files/css/isotope.css" type="text/css" media="all"/>
+		{% endif %}
+		{% if page.libraries contains 'owlcarousel' %}
+			<link rel="stylesheet" id="owlcarousel-css" href="../files/css/owl.carousel.css" type="text/css" media="all"/>
+		{% endif %}
+		{% if page.libraries contains 'lightcase' %}
+			<link rel="stylesheet" id="lightcase-css" href="../files/css/lightcase.css" type="text/css" media="all" />
+		{% endif %}
 		<link rel="stylesheet" id="mqueries-style-css" href="../files/css/mqueries.css" type="text/css" media="all"/>
 		<link rel="shortcut icon" href="../files/uploads/favicon.png"/>
 		<title>{{ page.title }} // Monogram UI</title>
@@ -39,6 +46,9 @@
 		<script type="text/javascript" src="../files/js/jquery.imagesloaded.min.js"></script>
 		{% if page.libraries contains 'owlcarousel' %}
 			<script type="text/javascript" src="../files/js/jquery.owl.carousel.js"></script>
+		{% endif %}
+		{% if page.libraries contains 'lightcase' %}
+			<script type="text/javascript" src="../files/js/jquery.lightcase.min.js"></script>
 		{% endif %}
 		<script type="text/javascript" src="../files/js/script.js"></script>
 	</body>

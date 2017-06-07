@@ -13,3 +13,5 @@ exclude:
 gems:
   - jekyll-email-protect
   - jekyll-last-modified-at
+
+filePath: ../files/uploads
