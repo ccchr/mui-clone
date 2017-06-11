@@ -1,9 +1,8 @@
-
 /*----------------------------------------------
 
-19. PAGINATION & SHARE
+ 19. PAGINATION & SHARE
 
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 #share:not(.share-fixed)+#single-pagination:not(.img-pagination) {
 	margin-top: 30px;
@@ -37,18 +36,18 @@
 #pagination ul li a,
 #single-pagination:not(.img-pagination) ul li a,
 #pagination ul li span {
-	font-family: 'Montserrat';
+	font-family: Montserrat;
 	font-weight: 400;
 	font-size: 11px;
 	line-height: 17px;
 	height: 17px;
 	overflow: hidden;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: .1em;
 	display: block;
 	color: #1a1a1a;
 	position: relative;
-	transition: all 0.2s ease;
+	transition: all .2s ease;
 }
 
 #pagination ul li.prev,
@@ -75,13 +74,13 @@
 
 #pagination ul li a:hover,
 #single-pagination:not(.img-pagination) ul li a:hover {
-	color: #AC2430;
+	color: #33bfd0;
 }
 
 #pagination ul li.next a:after,
 #single-pagination:not(.img-pagination) ul li.next a:after {
 	content: "\f125";
-	font-family: "Ionicons";
+	font-family: Ionicons;
 	font-size: 10px;
 	line-height: 10px;
 	height: 10px;
@@ -96,7 +95,7 @@
 #pagination ul li.prev a:after,
 #single-pagination:not(.img-pagination) ul li.prev a:after {
 	content: "\f124";
-	font-family: "Ionicons";
+	font-family: Ionicons;
 	font-size: 10px;
 	line-height: 10px;
 	height: 10px;
@@ -119,7 +118,7 @@
 
 #pagination ul li.next a:after,
 #pagination ul li.prev a:after {
-	text-indent: 0px !important;
+	text-indent: 0!important;
 }
 
 #pagination ul li a,
@@ -172,10 +171,10 @@
 	display: block;
 	background-position: center center;
 	background-size: 100%;
-	color: #ffffff;
+	color: #fff;
 	height: 220px;
 	position: relative;
-	transition: background-size 0.51s ease;
+	transition: background-size .51s ease;
 }
 
 .img-pagination ul li a::before {
@@ -212,18 +211,18 @@
 
 .img-pagination ul li a .post-name {
 	margin-top: 10px;
-	color: #ffffff;
+	color: #fff;
 }
 
 .img-pagination ul li a span {
-	font-family: 'Lato';
+	font-family: Lato;
 	font-weight: 700;
 	font-size: 11px;
 	line-height: 17px;
 	height: 17px;
 	overflow: hidden;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	letter-spacing: .1em;
 }
 
 .img-pagination ul li a:hover {
@@ -273,11 +272,11 @@
 	height: 40px;
 	min-width: 20px;
 	padding: 0 10px;
-	color: #ffffff;
-	transition: all 0.2s ease;
+	color: #fff;
+	transition: all .2s ease;
 	display: block;
 	text-align: left;
-	font-family: 'Montserrat';
+	font-family: Montserrat;
 	font-weight: 400;
 	font-size: 11px;
 }
@@ -291,6 +290,8 @@
 	font: normal normal normal 12px/1 FontAwesome;
 	font-size: 16px;
 	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	position: relative;
 	width: 20px;
 	display: inline-block;
@@ -344,7 +345,7 @@
 	right: -170px;
 	bottom: 80px;
 	z-index: 2;
-	transition: all 0.3s ease;
+	transition: all .3s ease;
 	margin: 0;
 }
 
@@ -366,22 +367,14 @@
 }
 
 #share.share-fixed ul li a {
-	padding: 0 !important;
+	padding: 0!important;
 	min-width: 50px;
 	display: inline-block;
-	-webkit-transform: translateX(-40px);
-	-moz-transform: translateX(-40px);
-	-ms-transform: translateX(-40px);
-	-o-transform: translateX(-40px);
 	transform: translateX(-40px);
-	transition: all 0.3s ease;
+	transition: all .3s ease;
 }
 
 #share.share-fixed ul li a:hover {
-	-webkit-transform: translateX(-100%);
-	-moz-transform: translateX(-100%);
-	-ms-transform: translateX(-100%);
-	-o-transform: translateX(-100%);
 	transform: translateX(-100%);
 }
 

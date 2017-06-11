@@ -1,9 +1,8 @@
-
 /*----------------------------------------------
 
-18. FULLWIDTH SECTION
+ 18. FULLWIDTH SECTION
 
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 .fullwidth-section .fullwidth-content {
 	padding: 100px 0;
@@ -27,6 +26,8 @@ header.header-transparent+#page-body .fullwidth-section:first-child .fullwidth-c
 }
 
 .fullwidth-section.fullheight {
+	min-height: 0;
+	min-height: 0;
 	min-height: calc(100vh - 60px);
 }
 

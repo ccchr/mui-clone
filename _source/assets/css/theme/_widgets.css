@@ -1,8 +1,8 @@
 /*----------------------------------------------
 
-22. WIDGETS
+ 22. WIDGETS
 
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 .widget {
 	margin-top: 60px;
@@ -17,7 +17,7 @@ footer .one-full .widget {
 }
 
 div .widget:first-child {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 .widget .widget-title {
@@ -29,20 +29,20 @@ div .widget:first-child {
 	content: "";
 	width: 36px;
 	height: 2px;
-	background: #000000;
+	background: #000;
 	position: absolute;
-	bottom: 0px;
-	left: 0px;
+	bottom: 0;
+	left: 0;
 	opacity: 0.15;
 	filter: alpha(opacity=15);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
 }
 
 .text-light .widget .widget-title:after {
-	background: #ffffff;
+	background: #fff;
 	opacity: 0.2;
 	filter: alpha(opacity=20);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
 }
 
 .align-center .widget .widget-title:after,
@@ -54,12 +54,12 @@ div .widget:first-child {
 .align-right .widget .widget-title:after,
 .widget.align-right .widget-title:after {
 	left: inherit;
-	right: 0px;
+	right: 0;
 }
 
 
 /* Text Widget
--------------------------------- */
+ -------------------------------- */
 
 .widget_text p {
 	font-size: 14px;
@@ -68,7 +68,7 @@ div .widget:first-child {
 
 
 /* Menu Widget
--------------------------------- */
+ -------------------------------- */
 
 .widget ul:not(.socialmedia-widget) {
 	list-style: none;
@@ -78,13 +78,13 @@ div .widget:first-child {
 
 .widget ul:not(.socialmedia-widget):not(.product-list) li a {
 	color: #696969;
-	font-family: 'Montserrat';
+	font-family: Montserrat;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 20px;
 	display: block;
-	letter-spacing: 0.04em;
-	transition: color 0.2s ease;
+	letter-spacing: .04em;
+	transition: color .2s ease;
 }
 
 .text-light .widget ul:not(.socialmedia-widget):not(.product-list) li a {
@@ -92,7 +92,7 @@ div .widget:first-child {
 }
 
 .widget ul:not(.socialmedia-widget):not(.product-list) li a:hover {
-	color: #AC2430;
+	color: #33bfd0;
 }
 
 .one-full .widget_menu ul li {
@@ -113,10 +113,10 @@ div .widget:first-child {
 
 /*	Social Widget
 
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 .socialmedia-widget {
-	margin: 20px 0 0 0;
+	margin: 20px 0 0;
 	padding: 0;
 	list-style: none;
 }
@@ -132,14 +132,12 @@ div .socialmedia-widget:first-child {
 
 .socialmedia-widget li {
 	display: inline-block;
-	*display: inline;
-	*zoom: 1;
 	margin: 0 14px 0 0;
 	position: relative;
 }
 
 .socialmedia-widget li:last-child {
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .align-center .socialmedia-widget li {
@@ -149,18 +147,18 @@ div .socialmedia-widget:first-child {
 
 .align-center .socialmedia-widget[class*='style-'] li {
 	margin-right: -5px;
-	padding: 0 0px;
+	padding: 0;
 }
 
 .align-right .socialmedia-widget li,
 .right-float .socialmedia-widget li {
 	margin-left: 14px;
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .align-right .socialmedia-widget li:first-child,
 .right-float .socialmedia-widget li:first-child {
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 .socialmedia-widget li a {
@@ -177,9 +175,9 @@ div .socialmedia-widget:first-child {
 }
 
 .text-light .socialmedia-widget li a {
-	color: #ffffff;
+	color: #fff;
 }
-/*
+
 .socialmedia-widget li.facebook a:before,
 .socialmedia-widget li.facebook a:after {
 	content: "\f09a";
@@ -187,7 +185,7 @@ div .socialmedia-widget:first-child {
 
 .socialmedia-widget li.twitter a:before,
 .socialmedia-widget li.twitter a:after {
-	content: "\f099"
+	content: "\f099";
 }
 
 .socialmedia-widget li.tumblr a:before,
@@ -329,8 +327,8 @@ div .socialmedia-widget:first-child {
 	visibility: hidden;
 	opacity: 0;
 	filter: alpha(opacity=0);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-}*/
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
 
 
 /* sizes */
@@ -361,7 +359,7 @@ div .socialmedia-widget:first-child {
 
 .align-right .socialmedia-widget.size-medium li {
 	margin-left: 20px;
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .socialmedia-widget.size-big li {
@@ -375,7 +373,7 @@ div .socialmedia-widget:first-child {
 
 .align-right .socialmedia-widget.size-big li {
 	margin-left: 25px;
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .socialmedia-widget.size-huge li {
@@ -389,7 +387,7 @@ div .socialmedia-widget:first-child {
 
 .align-right .socialmedia-widget.size-huge li {
 	margin-left: 30px;
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 
@@ -481,7 +479,7 @@ div .socialmedia-widget:first-child {
 .socialmedia-widget li a,
 .socialmedia-widget li a:before,
 .socialmedia-widget li a:after {
-	transition: all 0.25s ease;
+	transition: all .25s ease;
 }
 
 .socialmedia-widget[class*='hover-slide'] li a:hover:before {
@@ -497,11 +495,11 @@ div .socialmedia-widget:first-child {
 	top: 100%;
 	opacity: 1;
 	filter: alpha(opacity=100);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
 .socialmedia-widget[class*='hover-slide'] li a:hover:after {
-	top: 0px;
+	top: 0;
 }
 
 
@@ -627,7 +625,7 @@ div .socialmedia-widget:first-child {
 
 .socialmedia-widget.hover-fade-1 li.soundcloud a:hover,
 .socialmedia-widget.hover-slide-1 li.soundcloud a:after {
-	color: #ff7700;
+	color: #f70;
 }
 
 .socialmedia-widget.hover-fade-1 li.spotify a:hover,
@@ -672,13 +670,13 @@ div .socialmedia-widget:first-child {
 .socialmedia-widget.hover-slide-2 li a:after {
 	background: #1a1a1a;
 	border-color: #1a1a1a;
-	color: #ffffff;
+	color: #fff;
 }
 
 .text-light .socialmedia-widget.hover-fade-2 li a:hover:before,
 .text-light .socialmedia-widget.hover-slide-2 li a:after {
-	background: #ffffff;
-	border-color: #ffffff;
+	background: #fff;
+	border-color: #fff;
 	color: #1a1a1a;
 }
 
@@ -688,354 +686,354 @@ div .socialmedia-widget:first-child {
 .socialmedia-widget.hover-fade-3 li.facebook a:hover:before {
 	background: #446ebf;
 	border-color: #446ebf;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.twitter a:hover:before {
 	background: #39aadc;
 	border-color: #39aadc;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.tumblr a:hover:before {
 	background: #4c6781;
 	border-color: #4c6781;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.vimeo a:hover:before {
 	background: #15c9f5;
 	border-color: #15c9f5;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.dribbble a:hover:before {
 	background: #f14980;
 	border-color: #f14980;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.deviantart a:hover:before {
 	background: #2ea06f;
 	border-color: #2ea06f;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.behance a:hover:before {
 	background: #00b0f0;
 	border-color: #00b0f0;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.flickr a:hover:before {
 	background: #f04783;
 	border-color: #f04783;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.linkedin a:hover:before {
 	background: #81d3fd;
 	border-color: #81d3fd;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.rss a:hover:before {
 	background: #ff8322;
 	border-color: #ff8322;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.googleplus a:hover:before {
 	background: #d63d1e;
 	border-color: #d63d1e;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.pinterest a:hover:before {
 	background: #c81e1e;
 	border-color: #c81e1e;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.youtube a:hover:before {
 	background: #ee423d;
 	border-color: #ee423d;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.mail a:hover:before {
 	background: #74624d;
 	border-color: #74624d;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.instagram a:hover:before {
 	background: #95604b;
 	border-color: #95604b;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.xing a:hover:before {
 	background: #036567;
 	border-color: #036567;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.dropbox a:hover:before {
 	background: #008cd2;
 	border-color: #008cd2;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.stumbleupon a:hover:before {
 	background: #f94213;
 	border-color: #f94213;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.delicious a:hover:before {
 	background: #1b59c3;
 	border-color: #1b59c3;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.wordpress a:hover:before {
 	background: #118bc0;
 	border-color: #118bc0;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.vk a:hover:before {
 	background: #29577b;
 	border-color: #29577b;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.soundcloud a:hover:before {
-	background: #ff7700;
-	border-color: #ff7700;
-	color: #ffffff;
+	background: #f70;
+	border-color: #f70;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.spotify a:hover:before {
 	background: #80b900;
 	border-color: #80b900;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.codepen a:hover:before {
 	background: #171515;
 	border-color: #171515;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.github a:hover:before {
 	background: #171515;
 	border-color: #171515;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.lastfm a:hover:before {
 	background: #f94f14;
 	border-color: #f94f14;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.jsfiddle a:hover:before {
 	background: #0c9de8;
 	border-color: #0c9de8;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.mixcloud a:hover:before {
 	background: #29587c;
 	border-color: #29587c;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-fade-3 li.skype a:hover:before {
 	background: #00aef3;
 	border-color: #00aef3;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.facebook a:after {
 	background: #446ebf;
 	border-color: #446ebf;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.twitter a:after {
 	background: #39aadc;
 	border-color: #39aadc;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.tumblr a:after {
 	background: #4c6781;
 	border-color: #4c6781;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.vimeo a:after {
 	background: #15c9f5;
 	border-color: #15c9f5;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.dribbble a:after {
 	background: #f14980;
 	border-color: #f14980;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.deviantart a:after {
 	background: #2ea06f;
 	border-color: #2ea06f;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.behance a:after {
 	background: #00b0f0;
 	border-color: #00b0f0;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.flickr a:after {
 	background: #f04783;
 	border-color: #f04783;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.linkedin a:after {
 	background: #81d3fd;
 	border-color: #81d3fd;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.rss a:after {
 	background: #ff8322;
 	border-color: #ff8322;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.googleplus a:after {
 	background: #d63d1e;
 	border-color: #d63d1e;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.pinterest a:after {
 	background: #c81e1e;
 	border-color: #c81e1e;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.youtube a:after {
 	background: #ee423d;
 	border-color: #ee423d;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.mail a:after {
 	background: #74624d;
 	border-color: #74624d;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.instagram a:after {
 	background: #95604b;
 	border-color: #95604b;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.xing a:after {
 	background: #036567;
 	border-color: #036567;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.dropbox a:after {
 	background: #008cd2;
 	border-color: #008cd2;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.stumbleupon a:after {
 	background: #f94213;
 	border-color: #f94213;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.delicious a:after {
 	background: #1b59c3;
 	border-color: #1b59c3;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.wordpress a:after {
 	background: #118bc0;
 	border-color: #118bc0;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.vk a:after {
 	background: #29577b;
 	border-color: #29577b;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.soundcloud a:after {
-	background: #ff7700;
-	border-color: #ff7700;
-	color: #ffffff;
+	background: #f70;
+	border-color: #f70;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.spotify a:after {
 	background: #80b900;
 	border-color: #80b900;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.codepen a:after {
 	background: #171515;
 	border-color: #171515;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.github a:after {
 	background: #171515;
 	border-color: #171515;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.lastfm a:after {
 	background: #f94f14;
 	border-color: #f94f14;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.jsfiddle a:after {
 	background: #0c9de8;
 	border-color: #0c9de8;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.mixcloud a:after {
 	background: #29587c;
 	border-color: #29587c;
-	color: #ffffff;
+	color: #fff;
 }
 
 .socialmedia-widget.hover-slide-3 li.skype a:after {
 	background: #00aef3;
 	border-color: #00aef3;
-	color: #ffffff;
+	color: #fff;
 }
 
 
 /*	Recent Posts
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 .widget_recent_entries li {
 	margin-top: 15px;
@@ -1045,7 +1043,7 @@ div .socialmedia-widget:first-child {
 	font-size: 12px;
 	line-height: 15px;
 	display: block;
-	font-family: 'Lato';
+	font-family: Lato;
 	font-weight: 300;
 	color: #9c9c9c;
 }
@@ -1056,11 +1054,11 @@ div .socialmedia-widget:first-child {
 
 
 /*	Newsletter
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 #newsletter-email {
 	width: 280px;
-	max-width: calc(100% - 100px);
+	max-width: calc(100%-100px);
 }
 
 #newsletter-submit {
@@ -1074,7 +1072,7 @@ div .socialmedia-widget:first-child {
 
 
 /*	Search Widget
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 #searchform {
 	margin-top: 20px;
@@ -1101,14 +1099,14 @@ div #searchform:first-child {
 }
 
 #searchform input[type="text"] {
-	max-width: calc(100% - 47px);
+	max-width: calc(100%-47px);
 	padding: 10px 35px 10px 10px;
 }
 
 #searchform>div:before {
 	text-align: center;
 	content: "\f2f5";
-	font-family: "Ionicons";
+	font-family: Ionicons;
 	font-size: 16px;
 	line-height: 20px;
 	height: 20px;
@@ -1126,7 +1124,7 @@ div #searchform:first-child {
 
 
 /*	Tag Cloud Widget
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 .tagcloud {
 	margin-top: 20px;
@@ -1151,21 +1149,21 @@ div .tagcloud:first-child {
 
 .text-light .tagcloud>a {
 	border-color: #3d3d3d;
-	color: #ffffff;
+	color: #fff;
 }
 
 .tagcloud>a:hover {
-	border-color: #AC2430;
+	border-color: #33bfd0;
 }
 
 
 /*	Product List Widget
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 .product-list li {
 	overflow: hidden;
-	margin: 0 0 10px 0;
-	padding: 0 0 10px 0;
+	margin: 0 0 10px;
+	padding: 0 0 10px;
 }
 
 .product-list li .product-item-image {
@@ -1175,7 +1173,7 @@ div .tagcloud:first-child {
 }
 
 .product-list li .product-item-desc {
-	width: calc(100% - 65px);
+	width: calc(100%-65px);
 	position: relative;
 	float: right;
 }
@@ -1200,7 +1198,7 @@ div .tagcloud:first-child {
 
 
 /*	Instagram/Flickr/Dribbble Widget
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 .instagram-widget>div,
 .flickr-widget>div,
@@ -1212,7 +1210,7 @@ div .tagcloud:first-child {
 .instagram-widget.instagram-spaced>div,
 .flickr-widget.flickr-spaced>div,
 .dribbble-widget.dribbble-spaced>div {
-	width: calc(12.5% - 20px);
+	width: calc(12.5%-20px);
 	margin: 10px;
 }
 
@@ -1233,7 +1231,7 @@ aside .flickr-widget>div {
 aside .instagram-widget.instagram-spaced>div,
 .column .flickr-widget.flickr-spaced>div,
 aside .flickr-widget.flickr-spaced>div {
-	width: calc(25% - 20px);
+	width: calc(25%-20px);
 }
 
 .dribbble-widget>div {
@@ -1241,7 +1239,7 @@ aside .flickr-widget.flickr-spaced>div {
 }
 
 .dribbble-widget.dribbble-spaced>div {
-	width: calc(16.6% - 20px);
+	width: calc(16.6%-20px);
 }
 
 .column .dribbble-widget>div,
@@ -1251,5 +1249,5 @@ aside .dribbble-widget>div {
 
 .column .dribbble-widget.dribbble-spaced>div,
 aside .dribbble-widget.dribbble-spaced>div {
-	width: calc(33.3% - 20px);
+	width: calc(33.3%-20px);
 }

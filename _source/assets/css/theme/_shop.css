@@ -1,13 +1,12 @@
-
 /*----------------------------------------------
 
-14. SHOP
+ 14. SHOP
 
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 
 /* Shop General
-----------------------------*/
+ ----------------------------*/
 
 .product-media {
 	position: relative;
@@ -15,23 +14,23 @@
 }
 
 .product-media .onsale {
-	font-family: 'Montserrat';
+	font-family: Montserrat;
 	font-size: 10px;
 	line-height: 17px;
 	font-weight: 400;
-	letter-spacing: 0.04em;
+	letter-spacing: .04em;
 	text-transform: uppercase;
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: #AC2430;
+	background: #33bfd0;
 	display: inline-block;
 	padding: 3px 15px;
-	color: #ffffff;
+	color: #fff;
 }
 
 .product-price {
-	font-family: 'Montserrat';
+	font-family: Montserrat;
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
@@ -40,7 +39,7 @@
 }
 
 .text-light .product-price {
-	color: #ffffff;
+	color: #fff;
 }
 
 .product-price del,
@@ -50,14 +49,14 @@
 
 .product-price ins {
 	text-decoration: none;
-	color: #AC2430;
+	color: #33bfd0;
 }
 
 .product-price del {
 	font-size: 11px;
 	opacity: 0.4;
 	filter: alpha(opacity=40);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
 }
 
 .product-rating {
@@ -66,20 +65,20 @@
 
 .product-rating .star-rating {
 	display: inline-block;
-	color: #AC2430;
+	color: #33bfd0;
 	font-size: 16px;
 }
 
 
 /* Shop Grid
-----------------------------*/
+ ----------------------------*/
 
 .shop-container .shop-item .product-media .add-to-cart-overlay {
 	position: absolute;
 	width: 100%;
 	bottom: 0;
 	left: 0;
-	transition: all 0.3s ease;
+	transition: all .3s ease;
 	-webkit-transform: translateY(101%);
 	-moz-transform: translateY(101%);
 	-ms-transform: translateY(101%);
@@ -96,23 +95,23 @@
 }
 
 .shop-container .shop-item .product-media .add-to-cart-overlay a {
-	font-family: 'Lato';
+	font-family: Lato;
 	font-weight: 700;
 	font-size: 11px;
 	line-height: 20px;
 	line-height: 22px;
-	letter-spacing: 0.1em;
+	letter-spacing: .1em;
 	text-transform: uppercase;
 	text-align: center;
 	background: #1a1a1a;
-	color: #ffffff;
+	color: #fff;
 	display: block;
 	padding: 13px 0;
-	transition: all 0.2s ease;
+	transition: all .2s ease;
 }
 
 .shop-container .shop-item .product-media .add-to-cart-overlay a:hover {
-	background: #AC2430;
+	background: #33bfd0;
 }
 
 .shop-container .shop-item .product-desc {
@@ -121,7 +120,7 @@
 
 
 /* Shop Single
-----------------------------*/
+ ----------------------------*/
 
 #shop-single .onsale {
 	font-size: 12px;
@@ -137,7 +136,7 @@
 
 #shop-single .product-thumbs a {
 	float: left;
-	width: calc(20% - 16px);
+	width: calc(20%-16px);
 	display: block;
 	height: auto;
 	margin-right: 20px;
@@ -148,11 +147,11 @@
 }
 
 #shop-single .product-rating a.review-link {
-	font-family: 'Lora';
+	font-family: Lora;
 	font-weight: 400;
 	font-size: 12px;
 	font-style: italic;
-	letter-spacing: 0.03em;
+	letter-spacing: .03em;
 	opacity: 0.6;
 	color: #1a1a1a;
 	margin-left: 10px;
@@ -232,7 +231,7 @@
 }
 
 #shop-single #product-review {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 #shop-single #product-review .comment-list {
@@ -257,14 +256,14 @@
 
 
 /* Shop Cart & Checkout
-----------------------------*/
+ ----------------------------*/
 
 table.table-cart tbody td {
 	padding: 20px 0;
 }
 
 table.table-cart tbody tr:first-child td {
-	padding-top: 0px;
+	padding-top: 0;
 }
 
 table.table-cart thead+tbody tr:first-child td {
@@ -272,7 +271,7 @@ table.table-cart thead+tbody tr:first-child td {
 }
 
 table.table-cart tbody tr:last-child td {
-	padding-bottom: 0px;
+	padding-bottom: 0;
 }
 
 table.table-cart thead th {
@@ -369,7 +368,7 @@ table.table-cart .update-cart {
 
 .cart-total table.table-cart tr.total .product-price {
 	font-size: 18px;
-	color: #AC2430;
+	color: #33bfd0;
 }
 
 #shop-cart .checkout-button {
@@ -380,4 +379,19 @@ table.table-cart .update-cart {
 #shop-checkout .billing-details,
 #shop-checkout .payment-option {
 	margin-top: 30px;
+}
+
+
+/*----------------------------------------------
+
+ 15. RELATED ITEMS
+
+ ------------------------------------------------*/
+
+.related-items {
+	margin-top: 100px;
+}
+
+.related-items #related-grid {
+	margin-top: 60px;
 }

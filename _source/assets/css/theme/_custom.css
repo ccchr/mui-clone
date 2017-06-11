@@ -1,47 +1,81 @@
-
 /*----------------------------------------------
 
-Client-specific styles
+ 24. CUSTOM STYLE
 
-------------------------------------------------*/
+ ------------------------------------------------*/
 
-#training {
-	background: url(../img/training.jpg) no-repeat center;
-	background-size: cover;
+
+/* 	!!!!!!!!!!!!!!!!!!
+ 	Depending on your logo height you want to use, please adapt the values below
+    	!!!!!!!!!!!!!!!!!! */
+
+
+/* your logo height */
+
+header #logo {
+	height: 30px;
 }
-#credits {
-	display: flex;
-	align-items: flex-end;
-	justify-content: flex-end;
-	text-align: right;
+
+nav#main-nav>ul>li>a {
+	height: 30px;
+	line-height: 30px;
 }
-.flex-section {
-	display: flex;
-	align-items: flex-start;
+
+#header-search a#show-search,
+#header-cart a#show-cart,
+#header-language a#show-language,
+#header-social .socialmedia-widget li a {
+	height: 30px;
+	line-height: 30px;
 }
-.flex {
-	&.one-third {
-		width: 100%;
-		flex: 0 0 33.333333%;
-	}
+
+
+/* Height of the header on pageload - Logo height + padding of #logo a (30+2x30)*/
+
+nav#main-nav .mega-menu-content:before {
+	height: 90px;
 }
-@media only screen and (max-width: $sm) {
-	.flex-section {
-		flex-direction: column;
-		align-items: stretch;
-	}
-	.flex {
-		flex: 0 0 100%;
-		border: 1px solid rgba(0, 0, 0, .15);
-		padding: 20px;
-	}
-	#pricing {
-		.flex-section {
-			.flex {
-				&:nth-child(2) {
-					order: -1;
-				}
-			}
-		}
-	}
+
+header:not(.header-transparent):not(.header-style-floating):not(.header-style-vertical)+#hero {
+	margin-top: 90px;
 }
+
+header:not(.header-transparent):not(.header-style-floating):not(.header-style-vertical)+#hero.hero-full {
+	min-height: calc(100vh - 90px);
+}
+
+header:not(.header-transparent):not(.header-style-floating):not(.header-style-vertical)+#page-body {
+	margin-top: 90px;
+}
+
+header.has-top-bar:not(.header-transparent):not(.header-style-floating):not(.header-style-vertical)+#hero {
+	margin-top: calc(90px + 40px);
+}
+
+header.has-top-bar:not(.header-transparent):not(.header-style-floating):not(.header-style-vertical)+#hero.hero-full {
+	min-height: calc(100vh - 90px-40px);
+}
+
+header.has-top-bar:not(.header-transparent):not(.header-style-floating):not(.header-style-vertical)+#page-body {
+	margin-top: calc(90px + 40px);
+}
+
+header.header-transparent.header-bordered+#hero #page-title,
+header.header-style-floating+#hero #page-title {
+	margin-top: 90px;
+}
+
+#hero #page-title.title-adapt:not(.title-top):not(.title-bottom) {
+	top: 90px;
+}
+
+header.header-transparent+#page-body .fullwidth-section:first-child::before {
+	height: 90px;
+}
+
+header:not(.header-transparent)+#page-body .fullwidth-section.fullheight:first-child {
+	min-height: calc(100vh - 90px);
+}
+
+
+/* YOUR CUSTOM CSS */

@@ -142,7 +142,11 @@ gulp.task('build-serve', ['reload'], function() {
 
 gulp.task('watch', function() {
 	// watch for CSS changes and trigger 'styles'
-    gulp.watch('_source/assets/css/**', ['styles']);
+    gulp.watch([
+		'_source/assets/css/_source.css',
+		'_source/assets/css/theme/**.css'
+
+	], ['styles']);
 
 	// watch JS
 	gulp.watch('_scripts/assets/js/**', ['scripts']);
@@ -154,7 +158,7 @@ gulp.task('watch', function() {
     gulp.watch([
 		'_source/**',
 		'!**/**.scss',
-		'!**/**.css',
+		'!**/**.css'
 	], ['reload']);
 });
 

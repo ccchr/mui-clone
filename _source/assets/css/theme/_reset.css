@@ -1,9 +1,8 @@
-
 /*----------------------------------------------
 
-0. RESET & CLEARFIX
+ 0. RESET & CLEARFIX
 
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 html,
 body,
@@ -81,7 +80,7 @@ ul {
 	list-style: none;
 }
 
-:focus {
+ :focus {
 	outline: 0;
 }
 
@@ -121,8 +120,6 @@ audio,
 canvas,
 video {
 	display: inline-block;
-	*display: inline;
-	*zoom: 1;
 }
 
 audio:not([controls]) {

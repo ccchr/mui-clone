@@ -1,16 +1,46 @@
 /*!
+ *
+ *  //\\
+ * //XX\\
+ *
  * Monogram UI
  * Copyright (c) 2017 Monogram, LLC. All rights reserved.
- * --------------------------------------------------------
+ * --------------------------------------------------------------
  * Made by Monogram. http://monogram.design/
  */
 
-@import "theme/_variables.css";
+ /*
+
+		Sudo sucks but we're working hard to improve it for
+		our own purpose. This text won't make it out of the
+		source, so we're safe commenting here.
+
+ 		COLORS
+ 		------
+ 		black (headings,backgrounds)				#1a1a1a
+ 		default text color (body)					#696969
+ 		light text color							#9c9c9c
+ 		light border 								#e0e0e0
+ 		light background (footer,boxed,...)			#f5f6f7
+
+ 		-- FOR DARK BACKGROUNDS
+ 		white 										#ffffff
+ 		dark text color 							#c9c9c9
+ 		dark (light) text color 					#8c8c8c
+ 		dark border 								#3d3d3d
+
+ 		main color									#33bfd0
+
+
+*/
+
 @import "theme/_reset.css";
 @import "theme/_base.css";
 @import "theme/_general.css";
 @import "theme/_header.css";
-@import "theme/_nav.css";
+@import "theme/_loader.css";
+@import "theme/_menu.css";
+@import "theme/_headerOptions.css";
 @import "theme/_footer.css";
 @import "theme/_hero.css";
 @import "theme/_portfolio.css";
@@ -18,7 +48,6 @@
 @import "theme/_blog.css";
 @import "theme/_comments.css";
 @import "theme/_shop.css";
-@import "theme/_related.css";
 @import "theme/_isotope.css";
 @import "theme/_columns.css";
 @import "theme/_fullWidth.css";

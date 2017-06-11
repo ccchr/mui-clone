@@ -1,9 +1,54 @@
-
 /*----------------------------------------------
 
-16. ISOTOPE GRID & GALLERY LIST & CAROUSEL (options)
+ 16. ISOTOPE GRID & GALLERY LIST & CAROUSEL (options)
 
-------------------------------------------------*/
+ ------------------------------------------------*/
+
+ /**** Isotope CSS3 transitions ****/
+
+ .isotope,
+ .isotope .isotope-item {
+ 	transition-duration: 0.8s;
+ }
+
+ .isotope {
+ 	transition-property: height, width;
+ }
+
+ .isotope .isotope-item {
+ 	transition-property: transform, opacity;
+ }
+
+
+ /**** disabling Isotope CSS3 transitions ****/
+
+ .isotope.no-transition,
+ .isotope.no-transition .isotope-item,
+ .isotope .isotope-item.no-transition {
+ 	transition-duration: 0s;
+ }
+
+
+ /* End: Recommended Isotope styles */
+
+
+ /* disable CSS transitions for containers with infinite scrolling*/
+
+ .isotope.infinite-scrolling {
+ 	transition: none;
+ }
+
+
+ /**** Isotope Filtering ****/
+
+ .isotope-item {
+ 	z-index: 2;
+ }
+
+ .isotope-hidden.isotope-item {
+ 	pointer-events: none;
+ 	z-index: 1;
+ }
 
 .isotope-grid {
 	width: calc(100% + 1px);
@@ -31,7 +76,7 @@
 }
 
 .filter:not(.filter-grey):not(.filter-dark)+.isotope-grid.portfolio-container[class*='isotope-spaced'] {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 .isotope-grid.isotope-spaced-mini {
@@ -45,8 +90,8 @@
 }
 
 .isotope-grid .isotope-item {
-	margin-right: 0px;
-	margin-bottom: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
 	float: left;
 	overflow: hidden;
 	position: relative;
@@ -230,6 +275,10 @@
 .isotope-grid[class*='style-modern'] .isotope-item img.wide-img {
 	width: 100%;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
@@ -237,6 +286,10 @@
 	width: auto;
 	height: 100%;
 	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 
@@ -254,7 +307,7 @@ ul.gallery-list.gallery-spaced {
 }
 
 div ul.gallery-list.gallery-spaced:first-child {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 ul.gallery-list li {
@@ -268,8 +321,10 @@ ul.gallery-list.gallery-spaced li {
 }
 
 ul.gallery-list.gallery-spaced li:first-child {
-	margin-top: 0px;
+	margin-top: 0;
 }
+
+
 
 
 /* carousel */

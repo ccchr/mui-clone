@@ -1,66 +1,97 @@
+/*----------------------------------------------
+
+ 13. COMMENTS
+
+ ------------------------------------------------*/
+
+
+/* Comments
+ ----------------------------*/
+
 .comments {
 	margin-top: 60px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #e0e0e0;
-	ul {
-		background: none;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-	.comment-list {
-		margin-top: 30px;
-		.comment {
-			margin-top: 30px;
-			padding-top: 30px;
-			border-top: 1px solid #e0e0e0;
-			&:first-child {
-				margin-top: 0;
-			}
-		}
-	}
-	.comment {
-		.comment-inner {
-			overflow: hidden;
-			position: relative;
-		}
-		.children {
-			margin-left: 80px;
-			margin-top: 40px;
-		}
-	}
-	.user {
-		float: left;
-		width: 60px;
-		border-radius: 50%;
-		img {
-			border-radius: 50%;
-		}
-	}
-	.time {
-		font-size: 11px;
-		line-height: 15px;
-		margin-top: 5px;
-	}
-	.comment-content {
-		margin-left: 80px;
-		position: relative;
-	}
-	.comment-reply-link {
-		position: absolute;
-		top: 0;
-		right: 0;
-		font-family: Montserrat;
-		font-weight: 400;
-		font-size: 11px;
-		line-height: 17px;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-	}
 }
+
+.comments ul {
+	background: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.comments .comment-list {
+	margin-top: 30px;
+}
+
+.comments .comment-list .comment {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #e0e0e0;
+}
+
+.comments .comment-list .comment:first-child {
+	margin-top: 0;
+}
+
+.comments .comment .comment-inner {
+	overflow: hidden;
+	position: relative;
+}
+
+.comments .comment .children {
+	margin-left: 80px;
+	margin-top: 40px;
+}
+
+.comments .user {
+	float: left;
+	width: 60px;
+	-moz-border-radius: 999px;
+	-webkit-border-radius: 999px;
+	-o-border-radius: 999px;
+	border-radius: 999px;
+}
+
+.comments .user img {
+	-moz-border-radius: 999px;
+	-webkit-border-radius: 999px;
+	-o-border-radius: 999px;
+	border-radius: 999px;
+}
+
+.comments .time {
+	font-size: 11px;
+	line-height: 15px;
+	margin-top: 5px;
+}
+
+.comments .comment-content {
+	margin-left: 80px;
+	position: relative;
+}
+
+.comments .comment-reply-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 17px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+
+/* Leave comment
+ ----------------------------*/
+
 .leavecomment {
 	margin-top: 60px;
-	form {
-		margin-top: 30px;
-	}
+}
+
+.leavecomment form {
+	margin-top: 30px;
 }

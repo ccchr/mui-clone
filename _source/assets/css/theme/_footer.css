@@ -1,9 +1,8 @@
-
 /*----------------------------------------------
 
-8. FOOTER
+ 8. FOOTER
 
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 footer {
 	width: 100%;
@@ -13,21 +12,17 @@ footer {
 }
 
 footer.footer-dark {
-	background: $dark;
-	border: 0;
+	background: #1a1a1a;
+	border-color: #333;
 }
 
 footer.footer-custom {
 	background: none;
-	;
 	border: none;
 }
 
 footer .footer-inner {
 	padding: 100px 0;
-	.column-section {
-		display: flex;
-	}
 }
 
 footer .copyright {
@@ -44,18 +39,22 @@ footer .copyright {
 footer #backtotop {
 	text-align: center;
 	font-size: 11px;
-	font-family: "Montserrat";
+	font-family: Montserrat;
 	font-weight: 400;
 	line-height: 20px;
 	position: fixed;
 	bottom: 40px;
 	right: -1px;
 	width: auto;
-	transition: all 0.3s ease;
+	transition: all .3s ease;
 	z-index: 100;
-	color: #ffffff;
+	color: #fff;
 	background: #0f0f0f;
 	padding: 10px 15px;
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
 	transform: translateX(100%);
 }
 
@@ -64,14 +63,18 @@ footer #backtotop.visible {
 }
 
 footer #backtotop.visible:hover {
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	-ms-transform: translateX(0%);
+	-o-transform: translateX(0%);
 	transform: translateX(0%);
-	right: 0px;
+	right: 0;
 }
 
 footer #backtotop:before {
 	text-align: center;
 	content: "\f126";
-	font-family: "Ionicons";
+	font-family: Ionicons;
 	font-size: 10px;
 	line-height: 20px;
 	height: 10px;

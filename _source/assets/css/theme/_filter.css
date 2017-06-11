@@ -1,9 +1,8 @@
-
 /*----------------------------------------------
 
-11. FILTER
+ 11. FILTER
 
-------------------------------------------------*/
+ ------------------------------------------------*/
 
 .filter {
 	margin: 0;
@@ -11,18 +10,18 @@
 	text-align: center;
 	padding: 30px 20px;
 	height: auto;
-	width: calc(100% - 40px);
+	width: calc(100%-40px);
 	overflow: hidden;
 }
 
 .filter.align-left {
 	text-align: left;
-	padding: 30px 0px;
+	padding: 30px 0;
 }
 
 .filter.align-right {
 	text-align: right;
-	padding: 30px 0px;
+	padding: 30px 0;
 }
 
 .filter.filter-grey {
@@ -58,57 +57,70 @@ div[class*='spacer-']+.filter:not(.filter-grey):not(.filter-dark) {
 
 .filter li:after {
 	content: "";
-	width: calc(100% + 2px);
+	width: calc(100%+2px);
 	height: 2px;
-	background: #000000;
+	background: #000;
 	position: absolute;
 	bottom: 10px;
 	left: -1px;
 	opacity: 0;
 	filter: alpha(opacity=0);
-	transition: all 0.3s ease;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
 	z-index: 0;
 }
 
 .filter.filter-dark li:after,
 .filter.text-light li:after {
-	background: #ffffff;
+	background: #fff;
 }
 
 .filter li.active:after {
 	opacity: 0.15;
 	filter: alpha(opacity=15);
-	bottom: 0px;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
+	bottom: 0;
 }
 
 .filter.filter-dark li.active:after,
 .filter.text-light li.active:after {
 	opacity: 0.2;
 	filter: alpha(opacity=2);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=2);
 }
 
 .filter li a {
 	display: inline-block;
 	color: #1a1a1a;
-	font-family: 'Montserrat';
+	font-family: Montserrat;
 	font-size: 12px;
 	line-height: 26px;
 	font-weight: 400;
-	letter-spacing: 0.04em;
+	letter-spacing: .04em;
 	opacity: 0.5;
 	filter: alpha(opacity=50);
-	transition: opacity 0.3s ease;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	-ms-transition: opacity .3s ease;
+	transition: opacity .3s ease;
 	z-index: 1;
 	position: relative;
 }
 
 .filter.filter-dark li a,
 .filter.text-light li a {
-	color: #ffffff;
+	color: #fff;
 }
 
 .filter li.active a,
 .filter li a:hover {
 	opacity: 1;
 	filter: alpha(opacity=100);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
