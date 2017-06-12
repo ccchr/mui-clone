@@ -1,5 +1,5 @@
 <!-- HEADER -->
-<header id="header" class="{{ include.classes }}">
+<header id="header" class="{% if include.classes %}{{ include.classes }}{% else %}header-bordered header-transparent transparent-light{% endif %}">
 	{% if include.classes contains "has-top-bar" %}
 		<div id="top-bar" class="clearfix">
 			<div class="top-bar-site left-float show-on-mobile">
@@ -33,7 +33,9 @@
 	<div class="header-inner clearfix">
 		<div id="logo" class="left-float">
 			<a href="/docs/examples">
+				{% if include.classes contains "disableLogoSwitch" %}{% else %}
 				<img id="scroll-logo" src="{{ site.filePath }}/logo-sudo-scroll.png" srcset="{{ site.filePath }}/logo-sudo-scroll.png 1x, {{ site.filePath }}/logo-sudo-scroll@2x.png 2x" alt="Logo Scroll">
+				{% endif %}
 				<img id="dark-logo" src="{{ site.filePath }}/logo-sudo-dark.png" srcset="{{ site.filePath }}/logo-sudo-dark.png 1x, {{ site.filePath }}/logo-sudo-dark@2x.png 2x" alt="Logo Dark">
 				<img id="light-logo" src="{{ site.filePath }}/logo-sudo-light.png" srcset="{{ site.filePath }}/logo-sudo-light.png 1x, {{ site.filePath }}/logo-sudo-light@2x.png 2x" alt="Logo Light">
 			</a>
@@ -530,19 +532,19 @@
 											</ul>
 										</li>
 										<li class="mega-menu-title">
-											<a href="/docs/examples/blog-single-video-extern">Post Types</a>
+											<a href="/docs/examples/blog-single-video-external">Post Types</a>
 											<ul>
 												<li>
-													<a href="/docs/examples/blog-single-video-extern">Video Extern</a>
+													<a href="/docs/examples/blog-single-video-external">Video External</a>
 												</li>
 												<li>
-													<a href="/docs/examples/blog-single-video-selfhosted">Video Selfhosted</a>
+													<a href="/docs/examples/blog-single-video-selfhosted">Video Self-hosted</a>
 												</li>
 												<li>
-													<a href="/docs/examples/blog-single-audio-extern">Audio Extern</a>
+													<a href="/docs/examples/blog-single-audio-external">Audio External</a>
 												</li>
 												<li>
-													<a href="/docs/examples/blog-single-audio-selfhosted">Audio Selfhosted</a>
+													<a href="/docs/examples/blog-single-audio-selfhosted">Audio Self-hosted</a>
 												</li>
 												<li>
 													<a href="/docs/examples/blog-single-slider">Slider</a>

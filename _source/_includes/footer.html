@@ -1,96 +1,147 @@
-<footer id="footer" class="footer-dark text-light">
+<footer id="footer" class="{% if include.classes %}{% if include.classes == 'none' %}{% else %}{{ include.classes }}{% endif %}{% else %}footer-dark text-light{% endif %}" {% if include.classes contains "footer-custom" %}style="background:url({{ site.filePath }}/1680x1050-dark.jpg) center center; background-size: cover;"{% endif %}>
 	<div class="footer-inner wrapper">
 		<div class="column-section clearfix">
-			<div class="column two-fifth">
-				<div class="widget">
-					<img src="{{ site.filePath }}/logo-sudo-light.png" srcset="{{ site.filePath }}/logo-sudo-light.png 1x, {{ site.filePath }}/logo-sudo-light@2x.png 2x" alt="Logo">
-					<div class="spacer-mini"></div>
-					<p>Ultra Performance Wordpress theme for creative agencies.
-						<br>We provide perfect and professional services, covering all areas of the modern communication.</p>
+			{% if include.type contains "minimal" %}
+				<div class="column one-full">
+					<div class="widget widget_text">
+						<img src="{{ site.filePath }}/logo-sudo-scroll.png" srcset="{{ site.filePath }}/logo-sudo-scroll.png 1x, {{ site.filePath }}/logo-sudo-scroll@2x.png 2x" alt="Logo">
+					</div>
+					<div class="widget widget_menu">
+						<ul class="menu">
+							<li>
+								<a href="#">About Us</a>
+							</li>
+							<li>
+								<a href="#">Portfolio</a>
+							</li>
+							<li>
+								<a href="#">Our Team</a>
+							</li>
+							<li>
+								<a href="#">Support</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Shop</a>
+							</li>
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget widget_socialmedia">
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="facebook">
+								<a href="#"></a>
+							</li>
+							<li class="twitter">
+								<a href="#"></a>
+							</li>
+							<li class="dribbble">
+								<a href="#"></a>
+							</li>
+							<li class="behance">
+								<a href="#"></a>
+							</li>
+							<li class="instagram">
+								<a href="#"></a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="widget">
-					<ul class="socialmedia-widget hover-fade-1">
-						<li class="facebook">
-							<a href="#"></a>
-						</li>
-						<li class="twitter">
-							<a href="#"></a>
-						</li>
-						<li class="dribbble">
-							<a href="#"></a>
-						</li>
-						<li class="behance">
-							<a href="#"></a>
-						</li>
-						<li class="instagram">
-							<a href="#"></a>
-						</li>
-					</ul>
+			{% else %}
+				<div class="column two-fifth">
+					<div class="widget">
+						<img src="{{ site.filePath }}/logo-sudo-{% if include.classes == 'none' %}dark{% else %}light{% endif %}.png" srcset="{{ site.filePath }}/logo-sudo-{% if include.classes == 'none' %}dark{% else %}light{% endif %}.png 1x, {{ site.filePath }}/logo-sudo-{% if include.classes == 'none' %}dark{% else %}light{% endif %}@2x.png 2x" alt="Logo">
+						<div class="spacer-mini"></div>
+						<p>We are a new age marketing and design agency crafting engaging experiences that help businesses grow, streamline, and captivate people. Design for the human experience.</p>
+					</div>
+					<div class="widget">
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="facebook">
+								<a href="#"></a>
+							</li>
+							<li class="twitter">
+								<a href="#"></a>
+							</li>
+							<li class="dribbble">
+								<a href="#"></a>
+							</li>
+							<li class="behance">
+								<a href="#"></a>
+							</li>
+							<li class="instagram">
+								<a href="#"></a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="column one-fifth">
-				<div class="widget">
-					<h6 class="widget-title uppercase">Quick Menu</h6>
-					<ul class="menu">
-						<li>
-							<a href="#">About Us</a>
-						</li>
-						<li>
-							<a href="#">Portfolio</a>
-						</li>
-						<li>
-							<a href="#">Our Team</a>
-						</li>
-						<li>
-							<a href="#">Support</a>
-						</li>
-						<li>
-							<a href="#">Contact Us</a>
-						</li>
-					</ul>
+				<div class="column one-fifth">
+					<div class="widget">
+						<h6 class="widget-title uppercase">Quick Menu</h6>
+						<ul class="menu">
+							<li>
+								<a href="#">About Us</a>
+							</li>
+							<li>
+								<a href="#">Portfolio</a>
+							</li>
+							<li>
+								<a href="#">Our Team</a>
+							</li>
+							<li>
+								<a href="#">Support</a>
+							</li>
+							<li>
+								<a href="#">Contact Us</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="column one-fifth">
-				<div class="widget">
-					<h6 class="widget-title uppercase">Categories</h6>
-					<ul class="menu">
-						<li>
-							<a href="#">Design</a>
-						</li>
-						<li>
-							<a href="#">Graphic</a>
-						</li>
-						<li>
-							<a href="#">Stories</a>
-						</li>
-						<li>
-							<a href="#">Photography</a>
-						</li>
-						<li>
-							<a href="#">Video</a>
-						</li>
-					</ul>
+				<div class="column one-fifth">
+					<div class="widget">
+						<h6 class="widget-title uppercase">Categories</h6>
+						<ul class="menu">
+							<li>
+								<a href="#">Design</a>
+							</li>
+							<li>
+								<a href="#">Graphic</a>
+							</li>
+							<li>
+								<a href="#">Stories</a>
+							</li>
+							<li>
+								<a href="#">Photography</a>
+							</li>
+							<li>
+								<a href="#">Video</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="column one-fifth last-col">
-				<div class="widget widget_recent_entries">
-					<h6 class="widget-title uppercase">Recent Posts</h6>
-					<ul>
-						<li>
-							<a href="#">Waterfalls of Iceland</a>
-							<span class="post-date">5 hours ago</span>
-						</li>
-						<li>
-							<a href="#">Minimal Interior Elements</a>
-							<span class="post-date">11 hours ago</span>
-						</li>
-						<li>
-							<a href="#">Birds flying around</a>
-							<span class="post-date">1 day ago</span>
-						</li>
-					</ul>
+				<div class="column one-fifth last-col">
+					<div class="widget widget_recent_entries">
+						<h6 class="widget-title uppercase">Recent Posts</h6>
+						<ul>
+							<li>
+								<a href="#">Waterfalls of Iceland</a>
+								<span class="post-date">5 hours ago</span>
+							</li>
+							<li>
+								<a href="#">Minimal Interior Elements</a>
+								<span class="post-date">11 hours ago</span>
+							</li>
+							<li>
+								<a href="#">Birds flying around</a>
+								<span class="post-date">1 day ago</span>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
+			{% endif %}
 		</div>
 		<a id="backtotop" href="#">Back to top</a>
 	</div>

@@ -1,12 +1,16 @@
 # Monogram - Jekyll Configuration
 # ---------------------------------------------------------
 
+name: Monogram
+
+
 # Build settings
 source: _source
 destination: _deploy
 permalink: pretty
 markdown: kramdown
-# incremental: true #enable for large sites
+# incremental: true
+
 exclude:
   - main.built.js
 

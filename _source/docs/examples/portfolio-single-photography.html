@@ -2,9 +2,8 @@
 layout: example
 title: Portfolio Single Photography
 libraries: lightcase, isotope, imagesloaded
-headerClasses: header-bordered header-transparent transparent-light
 ---
-<section id="hero" class="hero-full parallax-section text-light" data-parallax-image="files/uploads/1680x1050-dark.jpg">
+<section id="hero" class="hero-full parallax-section text-light" data-parallax-image="{{ site.filePath }}/1680x1050-dark.jpg">
 	<div id="page-title" class="wrapper align-center">
 		<h5 class="subtitle-2">Photography</h5>
 		<h1>
@@ -17,10 +16,10 @@ headerClasses: header-bordered header-transparent transparent-light
 <section id="page-body">
 	<div class="wrapper-small">
 		<ul class="gallery-list gallery-spaced">
-			<li><img src="files/uploads/900x600-light.jpg" alt="SEO Name"/></li>
-			<li><img src="files/uploads/900x600-light.jpg" alt="SEO Name"/></li>
-			<li><img src="files/uploads/600x900-light.jpg" alt="SEO Name"/></li>
-			<li><img src="files/uploads/900x600-light.jpg" alt="SEO Name"/></li>
+			<li><img src="{{ site.filePath }}/900x600-light.jpg" alt="SEO Name"/></li>
+			<li><img src="{{ site.filePath }}/900x600-light.jpg" alt="SEO Name"/></li>
+			<li><img src="{{ site.filePath }}/600x900-light.jpg" alt="SEO Name"/></li>
+			<li><img src="{{ site.filePath }}/900x600-light.jpg" alt="SEO Name"/></li>
 		</ul>
 	</div>
 	<div class="spacer-big"></div>

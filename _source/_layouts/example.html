@@ -18,7 +18,7 @@
 			{{ content }}
 		</div>
 		{% if page.options contains 'noFooter' %}{% else %}
-			{% include footer.html %}
+			{% include footer.html type=page.footerType classes=page.footerClasses %}
 		{% endif %}
 		{% include scripts.html %}
 	</body>
