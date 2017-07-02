@@ -1,8 +1,8 @@
-# Monogram - Jekyll Configuration
-# ---------------------------------------------------------
-
-name: Monogram
-
+# ------------------------------------------------------------------------------
+# MONOGRAM
+# ------------------------------------------------------------------------------
+# Jekyll Configuration / Copyright (C) 2017 Monogram, LLC. All rights reserved.
+# ------------------------------------------------------------------------------
 
 # Build settings
 source: _source
@@ -14,8 +14,35 @@ markdown: kramdown
 exclude:
   - main.built.js
 
-gems:
-  - jekyll-email-protect
-  - jekyll-last-modified-at
+plugins: [jekyll-email-protect, jekyll-last-modified-at]
 
 filePath: /docs/examples/files/uploads
+
+# Client Information
+# ------------------------------------------------------------------------------
+
+# Basic
+name: Monogram
+shortname: monogram
+legal: Monogram, LLC
+
+# Contact
+phone: 415 997 7754
+email: hello@monogram.design
+
+# Meta
+description: "Design agency for the human experience. We design experiences that improve lives and move people."
+keywords: "design,atlanta,web,agency,graphic,print,marketing"
+author: "Monogram"
+domain: "http://monogram.design/"
+google-analytics: false
+# google-verification: Oxo4aJhF8Wt5tVkJ3K1jFWyPQGcWAiNneo-4lD4v3-0
+
+chanhgefreq: weekly
+
+# Monogram
+
+libraries: ionicons
+
+ionicons: //cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css
+fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css

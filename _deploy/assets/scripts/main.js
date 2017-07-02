@@ -1,6 +1,6 @@
 /*!
  * Monogram
- * Copyright (c) 2017  All rights reserved.
+ * Copyright (c) 2017 Monogram, LLC All rights reserved.
  * --------------------------------------------------------
  * Made by Monogram. http://monogram.design/
  */
