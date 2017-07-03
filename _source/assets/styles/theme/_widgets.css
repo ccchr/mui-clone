@@ -34,15 +34,11 @@ div .widget:first-child {
 	bottom: 0;
 	left: 0;
 	opacity: 0.15;
-	filter: alpha(opacity=15);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
 }
 
 .text-light .widget .widget-title:after {
 	background: #fff;
 	opacity: 0.2;
-	filter: alpha(opacity=20);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
 }
 
 .align-center .widget .widget-title:after,
@@ -59,7 +55,7 @@ div .widget:first-child {
 
 
 /* Text Widget
- -------------------------------- */
+ ---------------------------------------------------------------------------- */
 
 .widget_text p {
 	font-size: 14px;
@@ -68,7 +64,7 @@ div .widget:first-child {
 
 
 /* Menu Widget
- -------------------------------- */
+ ---------------------------------------------------------------------------- */
 
 .widget ul:not(.socialmedia-widget) {
 	list-style: none;
@@ -165,11 +161,8 @@ div .socialmedia-widget:first-child {
 	font: normal normal normal 12px/1 FontAwesome;
 	font-size: 16px;
 	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	line-height: 20px;
 	color: #1a1a1a;
-	/*transition: all 0.2s ease;*/
 	display: block;
 	text-align: center;
 }
@@ -326,8 +319,6 @@ div .socialmedia-widget:first-child {
 .socialmedia-widget li a:after {
 	visibility: hidden;
 	opacity: 0;
-	filter: alpha(opacity=0);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
 
 
@@ -483,10 +474,6 @@ div .socialmedia-widget:first-child {
 }
 
 .socialmedia-widget[class*='hover-slide'] li a:hover:before {
-	-webkit-transform: translateY(-100%);
-	-moz-transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	-o-transform: translateY(-100%);
 	transform: translateY(-100%);
 }
 
@@ -494,8 +481,6 @@ div .socialmedia-widget:first-child {
 	visibility: visible;
 	top: 100%;
 	opacity: 1;
-	filter: alpha(opacity=100);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
 .socialmedia-widget[class*='hover-slide'] li a:hover:after {
@@ -1099,7 +1084,7 @@ div #searchform:first-child {
 }
 
 #searchform input[type="text"] {
-	max-width: calc(100%-47px);
+	max-width: calc(100% - 47px);
 	padding: 10px 35px 10px 10px;
 }
 
@@ -1113,10 +1098,6 @@ div #searchform:first-child {
 	width: 20px;
 	position: absolute;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 	right: 10px;
 	color: #1a1a1a;
@@ -1173,7 +1154,7 @@ div .tagcloud:first-child {
 }
 
 .product-list li .product-item-desc {
-	width: calc(100%-65px);
+	width: calc(100% - 65px);
 	position: relative;
 	float: right;
 }
@@ -1210,7 +1191,7 @@ div .tagcloud:first-child {
 .instagram-widget.instagram-spaced>div,
 .flickr-widget.flickr-spaced>div,
 .dribbble-widget.dribbble-spaced>div {
-	width: calc(12.5%-20px);
+	width: calc(12.5% - 20px);
 	margin: 10px;
 }
 
@@ -1231,7 +1212,7 @@ aside .flickr-widget>div {
 aside .instagram-widget.instagram-spaced>div,
 .column .flickr-widget.flickr-spaced>div,
 aside .flickr-widget.flickr-spaced>div {
-	width: calc(25%-20px);
+	width: calc(25% - 20px);
 }
 
 .dribbble-widget>div {
@@ -1239,7 +1220,7 @@ aside .flickr-widget.flickr-spaced>div {
 }
 
 .dribbble-widget.dribbble-spaced>div {
-	width: calc(16.6%-20px);
+	width: calc(16.6% - 20px);
 }
 
 .column .dribbble-widget>div,
@@ -1249,5 +1230,5 @@ aside .dribbble-widget>div {
 
 .column .dribbble-widget.dribbble-spaced>div,
 aside .dribbble-widget.dribbble-spaced>div {
-	width: calc(33.3%-20px);
+	width: calc(33.3% - 20px);
 }

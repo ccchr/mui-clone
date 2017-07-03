@@ -53,8 +53,6 @@
 	del {
 		font-size: 11px;
 		opacity: 0.4;
-		filter: alpha(opacity=40);
-		-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
 	}
 }
 

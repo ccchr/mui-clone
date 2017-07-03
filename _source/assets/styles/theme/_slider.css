@@ -66,8 +66,6 @@
 	-moz-border-radius: 30px;
 	border-radius: 30px;
 	opacity: 0.4;
-	filter: alpha(opacity=40);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
 	transition: opacity .2s ease, background .2s ease;
 }
 
@@ -85,8 +83,6 @@
 	border: 2px solid #fff;
 	border-radius: 30px;
 	opacity: 0;
-	filter: alpha(opacity=0);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 	transition: opacity .2s ease;
 }
 
@@ -96,8 +92,6 @@
 
 .tp-bullets.sudo-bullets .tp-bullet:hover:before {
 	opacity: 0.85;
-	filter: alpha(opacity=85);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
 }
 
 .tp-bullets.sudo-bullets .tp-bullet.selected:before {
@@ -106,8 +100,6 @@
 
 .tp-bullets.sudo-bullets .tp-bullet.selected:after {
 	opacity: 1;
-	filter: alpha(opacity=100);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
 .tp-caption.sudo-caption {

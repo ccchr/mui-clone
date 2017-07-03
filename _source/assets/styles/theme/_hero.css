@@ -21,7 +21,7 @@
 		padding-bottom: 100px;
 		position: relative;
 		&:not(.wrapper):not(.wrapper-small) {
-			width: calc(100%-120px);
+			width: calc(100% - 120px);
 			padding-left: 60px;
 			padding-right: 60px;
 		}
