@@ -1,15 +1,6 @@
 #m {
-	svg,
-	p {
+	a {
 		transition: opacity 1s ease;
-	}
-	svg {
-		width: 70px;
-		opacity: 0.2;
-		min-width: unset;
-		max-width: unset;
-	}
-	p {
 		margin: 0;
 		opacity: 0.5;
 		font-size: 14px;
@@ -17,11 +8,8 @@
 		line-height: 1;
 	}
 	@media (min-width: 900px) {
-		&:hover {
-			svg,
-			p {
-				opacity: 1;
-			}
+		a:hover {
+			opacity: 1;
 		}
 	}
 }

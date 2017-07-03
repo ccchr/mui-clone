@@ -1,15 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	{% if page.redirectTo %}<meta http-equiv="refresh" content="0;url={{ page.redirectTo }}" />{% endif %}
-	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
-	<meta name="description" content="{{ site.description }}">
-	<meta name="keywords" content="{{ site.keywords }}">
-	<meta name="author" content="{{ site.author }}">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="/assets/styles/m.css">
-	<meta name="google-site-verification" content="{{ site.google-verification }}" />
+	{% include head.html %}
 </head>
 <body>
 	{{ content }}

@@ -23,8 +23,9 @@ filePath: /docs/examples/files/uploads
 
 # Basic
 name: Monogram
-shortname: monogram
+shortname: m
 legal: Monogram, LLC
+domain: "http://monogram.design/"
 
 # Contact
 phone: 415 997 7754
@@ -33,10 +34,9 @@ email: hello@monogram.design
 # Meta
 description: "Design agency for the human experience. We design experiences that improve lives and move people."
 keywords: "design,atlanta,web,agency,graphic,print,marketing"
-author: "Monogram"
-domain: "http://monogram.design/"
+
 google-analytics: false
-# google-verification: Oxo4aJhF8Wt5tVkJ3K1jFWyPQGcWAiNneo-4lD4v3-0
+google-verification: Oxo4aJhF8Wt5tVkJ3K1jFWyPQGcWAiNneo-4lD4v3-0
 
 chanhgefreq: weekly
 

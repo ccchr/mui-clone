@@ -1,25 +1,22 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en-US">
-	{% include head.html %}
-	<body>
-		{% if page.loader != false %}
-		<div id="page-loader">
-			<div class="page-loader-inner">
-				<span class="loader-figure"></span>
-				<h6 class="loader-label">Loading</h6>
-				<img class="loader-logo" src="{{ site.filePath }}/logo-sudo-scroll.png" srcset="{{ site.filePath }}/logo-sudo-scroll.png 1x, {{ site.filePath }}/logo-sudo-scroll@2x.png 2x" alt="Loader Logo">
-			</div>
-		</div>
-		{% endif %}
-		<div id="page-content">
-			{% if page.options contains 'noHeader' %}{% else %}
-				{% include header.html classes=page.headerClasses %}
-			{% endif %}
-			{{ content }}
-		</div>
-		{% if page.options contains 'noFooter' %}{% else %}
-			{% include footer.html type=page.footerType classes=page.footerClasses %}
-		{% endif %}
-		{% include scripts.html %}
-	</body>
-</html>
+---
+layout: default
+---
+{% if page.loader != false %}
+<div id="page-loader">
+	<div class="page-loader-inner">
+		<span class="loader-figure"></span>
+		<h6 class="loader-label">Loading</h6>
+		<img class="loader-logo" src="{{ site.filePath }}/logo-sudo-scroll.png" srcset="{{ site.filePath }}/logo-sudo-scroll.png 1x, {{ site.filePath }}/logo-sudo-scroll@2x.png 2x" alt="Loader Logo">
+	</div>
+</div>
+{% endif %}
+<div id="page-content">
+	{% if page.options contains 'noHeader' %}{% else %}
+		{% include header.html classes=page.headerClasses %}
+	{% endif %}
+	{{ content }}
+</div>
+{% if page.options contains 'noFooter' %}{% else %}
+	{% include footer.html type=page.footerType classes=page.footerClasses %}
+{% endif %}
+{% include scripts.html %}

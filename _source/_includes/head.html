@@ -1,51 +1,24 @@
-<head>
-	<!-- meta -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<!-- fonts -->
-	<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Lora:400italic,700italic" rel="stylesheet" type="text/css">
-	<link href="//fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
-	<!-- styles -->
-	<link rel="stylesheet" href="/assets/styles/m.css" type="text/css"/>
-	<link rel="stylesheet" href="/docs/examples/files/css/font-awesome.min.css" type="text/css"/>
-	<link rel="stylesheet" href="/docs/examples/files/css/ionicons.css" type="text/css"/>
-	<!-- custom styles -->
-	{% if page.libraries contains 'web-app' %}
-		<link rel="stylesheet" href="../custom/custom-webapp.css" type="text/css" media="all" />
-	{% endif %}
-	{% if page.libraries contains 'custom-shop' %}
-		<link rel="stylesheet" href="../custom/custom-shop.css" type="text/css" media="all" />
-	{% endif %}
-	{% if page.libraries contains 'custom-restaurant' %}
-		<link rel="stylesheet" href="../custom/custom-restaurant.css" type="text/css" media="all" />
-	{% endif %}
-	{% if page.libraries contains 'custom-agency' %}
-		<link rel="stylesheet" href="../custom/custom-agencybusiness.css" type="text/css" media="all" />
-	{% endif %}
-	{% if page.libraries contains 'custom-medical' %}
-		<link rel="stylesheet" href="../custom/custom-medical.css" type="text/css" media="all" />
-	{% endif %}
-	{% if page.libraries contains 'custom-music' %}
-		<link rel="stylesheet" href="../custom/custom-music.css" type="text/css" media="all" />
-	{% endif %}
-	<!-- libraries -->
-	{% if page.libraries contains 'revolution' %}
-		<link rel="stylesheet" href="/docs/examples/files/revolution/css/settings.css" type="text/css"/>
-		<link rel="stylesheet" href="/docs/examples/files/revolution/css/layers.css" type="text/css"/>
-		<link rel="stylesheet" href="/docs/examples/files/revolution/css/navigation.css" type="text/css"/>
-	{% endif %}
-	{% if page.libraries contains 'owlcarousel' %}
-		<link rel="stylesheet" href="/docs/examples/files/css/owl.carousel.css" type="text/css"/>
-	{% endif %}
-	{% if page.libraries contains 'lightcase' %}
-		<link rel="stylesheet" href="/docs/examples/files/css/lightcase.css" type="text/css"/>
-	{% endif %}
-	{% if page.libraries contains 'mediaelementplayer' %}
-		<link rel="stylesheet" href="/docs/examples/files/css/mediaelementplayer.css" type="text/css" />
-	{% endif %}
-	<link rel="shortcut icon" href="../{{ site.filePath }}/favicon.png"/>
-	<title>{{ page.title }} / Monogram UI</title>
-</head>
+<!-- Title, description, encoding, viewport, and other info -->
+{% include head/meta.html %}
+
+<!-- Fonts only -->
+{% include head/fonts.html %}
+
+<!-- Stylesheets only -->
+{% include head/styles.html %}
+
+<!-- Icons, Open Graph, and other meta information -->
+{% include head/structured-data.html %}
+
+<!-- Google Analytics (if configured) -->
+{% if site.google-analytics != false %}
+	{% include analytics.html %}
+{% endif %}
+
+<!--
+	Looking for scripts? they're probably at the bottom of the document.
+	Look for the scripts.html include.
+-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js" charset="utf-8"></script>
+<script>SmoothScroll()</script>

@@ -1,8 +1,8 @@
-/*----------------------------------------------
+/*------------------------------------------------------------------------------
 
  16. ISOTOPE GRID & GALLERY LIST & CAROUSEL (options)
 
- ------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
  /**** Isotope CSS3 transitions ****/
 
@@ -275,10 +275,6 @@
 .isotope-grid[class*='style-modern'] .isotope-item img.wide-img {
 	width: 100%;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 
@@ -286,10 +282,6 @@
 	width: auto;
 	height: 100%;
 	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 

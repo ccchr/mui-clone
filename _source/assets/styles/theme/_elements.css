@@ -1,12 +1,12 @@
-/*----------------------------------------------
+/*------------------------------------------------------------------------------
 
  21. ELEMENTS
 
- ------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
 
 /*	spacer
- -------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
 div[class*='spacer-'] {
 	display: block;
@@ -30,7 +30,7 @@ div[class*='spacer-'] {
 
 div[class*='spacer-']+p,
 div[class*='spacer-']+div,
-cdiv[class*='spacer-']+blockquote,
+div[class*='spacer-']+blockquote,
 div[class*='spacer-']+ul,
 div[class*='spacer-']+h1,
 div[class*='spacer-']+h2,
@@ -43,7 +43,7 @@ div[class*='spacer-']+h6 {
 
 
 /*	detail row
- -------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
 p.meta-row {
 	font-size: 14px;
@@ -69,62 +69,30 @@ p.meta-row .meta-label {
  -------------------------------------------------*/
 
 .has-animation {
-	-webkit-transform: translateY(10%);
-	-moz-transform: translateY(10%);
-	-ms-transform: translateY(10%);
-	-o-transform: translateY(10%);
 	transform: translateY(10%);
-	-webkit-transition: transform .8s ease .2s opacity .8s ease .2s;
-	-moz-transition: transform .8s ease .2s opacity .8s ease .2s;
-	-o-transition: transform .8s ease .2s opacity .8s ease .2s;
-	-ms-transition: transform .8s ease .2s opacity .8s ease .2s;
 	transition: transform .8s ease .2s opacity .8s ease .2s;
 	opacity: 0;
-	filter: alpha(opacity=0);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
 
 .has-animation.from-top {
-	-webkit-transform: translateY(-70px);
-	-moz-transform: translateY(-70px);
-	-ms-transform: translateY(-70px);
-	-o-transform: translateY(-70px);
 	transform: translateY(-70px);
 }
 
 .has-animation.from-left {
-	-webkit-transform: translateY(0px) translateX(-70px);
-	-moz-transform: translateY(0px) translateX(-70px);
-	-ms-transform: translateY(0px) translateX(-70px);
-	-o-transform: translateY(0px) translateX(-70px);
 	transform: translateY(0px) translateX(-70px);
 }
 
 .has-animation.from-right {
-	-webkit-transform: translateY(0px) translateX(70px);
-	-moz-transform: translateY(0px) translateX(70px);
-	-ms-transform: translateY(0px) translateX(70px);
-	-o-transform: translateY(0px) translateX(70px);
 	transform: translateY(0px) translateX(70px);
 }
 
 .has-animation.fade {
-	-webkit-transform: translateY(0px) translateX(0px);
-	-moz-transform: translateY(0px) translateX(0px);
-	-ms-transform: translateY(0px) translateX(0px);
-	-o-transform: translateY(0px) translateX(0px);
 	transform: translateY(0px) translateX(0px);
 }
 
 .has-animation.animated {
-	-webkit-transform: translateY(0px) translateX(0px);
-	-moz-transform: translateY(0px) translateX(0px);
-	-ms-transform: translateY(0px) translateX(0px);
-	-o-transform: translateY(0px) translateX(0px);
 	transform: translateY(0px) translateX(0px);
 	opacity: 1;
-	filter: alpha(opacity=100);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
 
@@ -352,10 +320,6 @@ p.meta-row .meta-label {
 	position: absolute;
 	left: 20px;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 	font-size: 20px;
 }
@@ -477,16 +441,12 @@ hr {
 	width: 100%;
 	margin: 0;
 	opacity: 0.15;
-	filter: alpha(opacity=15);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
 	margin-left: 0;
 }
 
 .text-light hr {
 	background: #fff;
 	opacity: 0.22;
-	filter: alpha(opacity=22);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=22);
 }
 
 .align-center hr,
@@ -563,20 +523,12 @@ hr.big {
 
 hr.has-animation:not(.colored) {
 	width: 0;
-	-webkit-transform: translateY(0px);
-	-moz-transform: translateY(0px);
-	-ms-transform: translateY(0px);
-	-o-transform: translateY(0px);
 	transform: translateY(0px);
 	opacity: 0.15!important;
-	filter: alpha(opacity=15)!important;
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15)!important;
 }
 
 .text-light hr.has-animation:not(.colored) {
 	opacity: 0.22;
-	filter: alpha(opacity=22);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=22);
 }
 
 hr.mini.has-animation.animated {
@@ -617,8 +569,6 @@ hr.huge {
 
 hr.colored {
 	opacity: 1;
-	filter: alpha(opacity=100);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	background: #33bfd0;
 	border-color: #33bfd0;
 }
@@ -696,16 +646,9 @@ hr.zigzag.colored {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-o-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 	padding-left: 5px;
 	border: 2px solid rgba(255, 255, 255, .4);
-	-moz-border-radius: 50px;
-	-khtml-border-radius: 50px;
-	-webkit-border-radius: 50px;
 	border-radius: 50px;
 	transition: all .3s ease;
 }
@@ -751,19 +694,10 @@ hr.zigzag.colored {
 	position: absolute;
 	top: 20px;
 	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 	border: 2px solid rgba(255, 255, 255, .4);
-	-moz-border-radius: 50px;
-	-khtml-border-radius: 50px;
-	-webkit-border-radius: 50px;
 	border-radius: 50px;
 	opacity: 0;
-	filter: alpha(opacity=0);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 	transition: all .3s ease;
 }
 
@@ -773,8 +707,6 @@ hr.zigzag.colored {
 
 .inline-video.active .inline-iframe-container:hover .close-inline-video {
 	opacity: 1;
-	filter: alpha(opacity=100);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
 .inline-video .inline-iframe-container .close-inline-video:before {
@@ -823,8 +755,6 @@ div .sr-counter:first-child {
 
 .counter-value {
 	opacity: 0;
-	-webkit-transition: opacity .6s ease;
-	-o-transition: oopacity .6s ease;
 	transition: opacity .6s ease;
 }
 
@@ -881,7 +811,7 @@ div .sr-counter:first-child {
 
 
 /*	Tabs
- ------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
 .tabs {
 	margin-top: 40px;
@@ -914,12 +844,6 @@ div .tabs:first-child {
 	bottom: 10px;
 	left: -1px;
 	opacity: 0;
-	filter: alpha(opacity=0);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	-ms-transition: all .3s ease;
 	transition: all .3s ease;
 	z-index: 0;
 }
@@ -930,27 +854,17 @@ div .tabs:first-child {
 
 .tabs ul.tab-nav li.active:after {
 	opacity: 0.15;
-	filter: alpha(opacity=15);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
 	bottom: 0;
 }
 
 .text-light .tabs ul.tab-nav li.active:after {
 	opacity: 0.2;
-	filter: alpha(opacity=2);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=2);
 }
 
 .tabs ul.tab-nav li a {
 	display: block;
 	margin-bottom: 10px;
 	opacity: 0.5;
-	filter: alpha(opacity=50);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-	-webkit-transition: opacity .3s ease;
-	-moz-transition: opacity .3s ease;
-	-o-transition: opacity .3s ease;
-	-ms-transition: opacity .3s ease;
 	transition: opacity .3s ease;
 }
 
@@ -958,8 +872,6 @@ div .tabs:first-child {
 .tabs ul.tab-nav li a:hover {
 	color: #1a1a1a;
 	opacity: 1;
-	filter: alpha(opacity=100);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
 .tabs .tab-container {
@@ -1002,8 +914,6 @@ div .tabs:first-child {
 	margin: 0;
 	padding: 15px 40px;
 	opacity: 1;
-	filter: alpha(opacity=100);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	color: #9c9c9c;
 }
 
@@ -1053,7 +963,7 @@ div .tabs:first-child {
 
 
 /*	Toggle
- ------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
 .toggle-item {
 	margin-top: 20px;
@@ -1105,12 +1015,6 @@ div .toggle-item:first-child {
 	bottom: 5px;
 	left: -1px;
 	opacity: 0;
-	filter: alpha(opacity=0);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	-ms-transition: all .3s ease;
 	transition: all .3s ease;
 	z-index: 0;
 }
@@ -1121,15 +1025,11 @@ div .toggle-item:first-child {
 
 .toggle-title.toggle-active:before {
 	opacity: 0.15;
-	filter: alpha(opacity=15);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=15);
 	bottom: -5px;
 }
 
 .text-light .toggle-title.toggle-active:before:after {
 	opacity: 0.2;
-	filter: alpha(opacity=2);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=2);
 }
 
 .toggle-inner {
@@ -1140,7 +1040,7 @@ div .toggle-item:first-child {
 
 
 /*	Skills
- ------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
 .progress-bar-item {
 	margin-top: 20px;
@@ -1200,8 +1100,6 @@ div .progress-bar-item:first-child {
 	top: -25px;
 	right: 0;
 	opacity: 0;
-	filter: alpha(opacity=0);
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 }
 
 .text-light .tooltip {
@@ -1210,7 +1108,7 @@ div .progress-bar-item:first-child {
 
 
 /*	Testimonials
- ------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
 .testimonial {
 	text-align: center;
@@ -1329,7 +1227,7 @@ div .progress-bar-item:first-child {
 
 
 /*	Pricing Tables
- ------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
 .pricing-table {
 	text-align: center;
@@ -1412,7 +1310,7 @@ div .progress-bar-item:first-child {
 
 
 /*	Team members
- ------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
 .team-content {
 	margin-top: 20px;
@@ -1420,7 +1318,7 @@ div .progress-bar-item:first-child {
 
 
 /*	Alerts
- ------------------------------------------------*/
+ ---------------------------------------------------------------------------- */
 
 div[class*='alert-'] {
 	padding-left: 70px;
@@ -1433,8 +1331,6 @@ div[class*='alert-']:before {
 	font: normal normal normal 12px/1 FontAwesome;
 	font-size: 18px;
 	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 	line-height: 50px;
 	width: 50px;

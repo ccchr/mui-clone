@@ -1,8 +1,8 @@
-/*----------------------------------------------
+/*------------------------------------------------------------------------------
 
  1. BASICS
 
- ------------------------------------------------*/
+ -----------------------------------------------------------------------------*/
 
 html {
 	height: 100%;
@@ -12,6 +12,7 @@ html {
 	-ms-text-size-adjust: 100%;
 	position: relative;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -34,7 +35,7 @@ body {
 
 
 /* Headings
- ---------------------------------------- */
+ ---------------------------------------------------------------------------- */
 
 h1,
 h2,
@@ -46,6 +47,39 @@ h6 {
 	font-weight: 400;
 	letter-spacing: -.02em;
 	color: #1a1a1a;
+	b,
+	strong {
+		font-weight: 700;
+	}
+	/* Headers Spacing */
+	div & {
+		margin-top: 40px;
+		&:first-child {
+			margin-top: 0!important;
+		}
+	}
+	i+ & {
+		margin-top: 20px;
+	}
+	h1 &,
+	h2 &,
+	h3 &,
+	h4 &,
+	h5 &,
+	h6 & {
+		margin-top: 22px;
+	}
+	/* headings with link */
+	a {
+		color: #1a1a1a;
+		transition: all 200ms ease;
+		.text-light & {
+			color: #fff;
+		}
+		&:hover {
+			color: #33bfd0;
+		}
+	}
 }
 
 .text-light h1,
@@ -91,84 +125,6 @@ h5 {
 h6 {
 	font-size: 13px;
 	line-height: 20px;
-}
-
-h1 b,
-h2 b,
-h3 b,
-h4 b,
-h5 b,
-h6 b,
-h1 strong,
-h2 strong,
-h3 strong,
-h4 strong,
-h5 strong,
-h6 strong {
-	font-weight: 700;
-}
-
-
-/* Headers Spacing */
-
-div h1,
-div h2,
-div h3,
-div h4,
-div h5,
-div h6 {
-	margin-top: 40px;
-	&:first-child {
-		margin-top: 0!important;
-	}
-}
-
-i+h1,
-i+h2,
-i+h3,
-i+h4,
-i+h5,
-i+h6 {
-	margin-top: 20px;
-}
-
-h1+h1,
-h1+h2,
-h1+h3,
-h1+h4,
-h1+h5,
-h1+h6,
-h2+h1,
-h2+h2,
-h2+h3,
-h2+h4,
-h2+h5,
-h2+h6,
-h3+h1,
-h3+h2,
-h3+h3,
-h3+h4,
-h3+h5,
-h3+h6,
-h4+h1,
-h4+h2,
-h4+h3,
-h4+h4,
-h4+h5,
-h4+h6,
-h5+h1,
-h5+h2,
-h5+h3,
-h5+h4,
-h5+h5,
-h5+h6,
-h6+h1,
-h6+h2,
-h6+h3,
-h6+h4,
-h6+h5,
-h6+h6 {
-	margin-top: 22px;
 }
 
 h2+h3,
@@ -242,29 +198,12 @@ h6+h6 {
 }
 
 
-/* headings with link */
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-	color: #1a1a1a;
-	transition: all 200ms ease;
-	.text-light & {
-		color: #fff;
-	}
-	&:hover {
-		color: #33bfd0;
-	}
-}
 
 
 /* Forms
- ---------------------------------------- */
+ ---------------------------------------------------------------------------- */
 
- ::placeholder {
+::placeholder {
 	color: #1a1a1a;
 	.text-light & {
 		color: #fff;
@@ -310,12 +249,6 @@ textarea.false {
 	border-color: #fa4d5a;
 }
 
-input[type=text],
-input[type=password],
-input[type=email] {
-
-}
-
 textarea {
 	min-height: 100px;
 }
@@ -341,20 +274,14 @@ button {
 	border: none;
 	position: relative;
 	top: -1px;
-}
-
-.text-light input[type=submit],
-.text-light input[type=button],
-.text-light button {
-	background: #fff;
-	color: #1a1a1a;
-}
-
-input[type=submit]:hover,
-input[type=button]:hover,
-button:hover {
-	background: #33bfd0;
-	color: #fff;
+	.text-light & {
+		background: #fff;
+		color: #1a1a1a;
+	}
+	&:hover {
+		background: #33bfd0;
+		color: #fff;
+	}
 }
 
 select {
@@ -380,22 +307,19 @@ select {
 	&:focus {
 		border-color: #1a1a1a;
 	}
-}
-
-.text-light select {
-	border-color: #3d3d3d;
-	color: #fff;
-	background: #0f0f0f;
-	background-image: url(../assets/select-arrow-light.png);
-}
-
-.text-light select:focus {
-	border-color: #fff;
-}
-
-select option {
-	cursor: pointer;
-	padding: 5px 7px;
+	.text-light & {
+		border-color: #3d3d3d;
+		color: #fff;
+		background: #0f0f0f;
+		background-image: url(../assets/select-arrow-light.png);
+		&:focus {
+			border-color: #fff;
+		}
+	}
+	option {
+		cursor: pointer;
+		padding: 5px 7px;
+	}
 }
 
 label {
@@ -406,19 +330,17 @@ label {
 	width: 100%;
 	color: #1a1a1a;
 	display: block;
-}
-
-.text-light label {
-	color: #fff;
+	.text-light & {
+		color: #fff;
+	}
+	abbr {
+		color: #33bfd0;
+		text-decoration: none;
+	}
 }
 
 .form-row.false label {
 	color: #fa4d5a;
-}
-
-label abbr {
-	color: #33bfd0;
-	text-decoration: none;
 }
 
 input[type=radio]+label,
@@ -430,11 +352,16 @@ input[type=checkbox]+label {
 
 form {
 	margin-top: 30px;
-}
-
-form .form-row {
-	margin-top: 20px;
-	position: relative;
+	.form-row {
+		margin-top: 20px;
+		position: relative;
+		&.hidden {
+			display: none;
+		}
+	}
+	.form-submit {
+		margin-top: 30px;
+	}
 }
 
 form .form-row.one-half:nth-child(2),
@@ -447,13 +374,6 @@ form .form-row.one-fourth:nth-child(4) {
 	margin-top: 0;
 }
 
-.form-row.hidden {
-	display: none;
-}
-
-form .form-submit {
-	margin-top: 30px;
-}
 
 div form:first-child,
 form .form-row:first-child,
@@ -481,7 +401,7 @@ textarea.check-error {
 
 
 /* Table
- ---------------------------------------- */
+ ---------------------------------------------------------------------------- */
 
 table {
 	margin-top: 30px;
@@ -545,29 +465,27 @@ table tbody tr td:last-child {
 	max-width: 100%;
 	overflow-y: scroll;
 	margin-top: 30px;
+	table {
+		min-width: 550px;
+	}
 }
 
 div .table-scroll:first-child {
 	margin-top: 0;
 }
 
-.table-scroll table {
-	min-width: 550px;
-}
-
 
 /* Links
- ---------------------------------------- */
+ ---------------------------------------------------------------------------- */
 
 a {
 	text-decoration: none;
 	cursor: pointer;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.0);
 	color: #33bfd0;
-}
-
-a:hover {
-	color: #1a1a1a;
+	&:hover {
+		color: #1a1a1a;
+	}
 }
 
 .text-light a:hover {
@@ -576,7 +494,7 @@ a:hover {
 
 
 /* Embedded content
- ---------------------------------------- */
+ ---------------------------------------------------------------------------- */
 
 img,
 object,
@@ -594,24 +512,20 @@ img {
 	max-width: 100%;
 	border: 0;
 	-ms-interpolation-mode: bicubic;
-}
-
-p img {
-	margin-top: 20px;
-}
-
-p img:first-child {
-	margin-top: 0;
-}
-
-img.alignleft {
-	margin: 3px 20px 20px 0;
-	float: left;
-}
-
-img.alignright {
-	margin: 3px 0 20px 20px;
-	float: right;
+	p & {
+		margin-top: 20px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	&.alignleft {
+		margin: 3px 20px 20px 0;
+		float: left;
+	}
+	&.alignright {
+		margin: 3px 0 20px 20px;
+		float: right;
+	}
 }
 
 p+video,
@@ -621,17 +535,16 @@ p+audio {
 
 
 /* Lists
- ---------------------------------------- */
+ ---------------------------------------------------------------------------- */
 
 ul {
 	margin-top: 20px;
 	margin-left: 15px;
 	list-style: disc;
-}
-
-ul.no-list-style {
-	list-style: none;
-	margin-left: 0;
+	&.no-list-style {
+		list-style: none;
+		margin-left: 0;
+	}
 }
 
 div ul:first-child,
@@ -653,16 +566,14 @@ li ol:first-child {
 ul li,
 ol li {
 	margin-top: 10px;
-}
-
-ul li:first-child,
-ol li:first-child {
-	margin-top: 0;
+	&:first-child {
+		margin-top: 0;
+	}
 }
 
 
 /* Others
- ---------------------------------------- */
+ ---------------------------------------------------------------------------- */
 
 p {
 	margin-top: 20px;
@@ -808,6 +719,9 @@ small {
 	line-height: 17px;
 	font-family: Montserrat;
 	font-weight: 300;
+	.text-light & {
+		color: #fff;
+	}
 }
 
 small b,
@@ -815,6 +729,3 @@ small strong {
 	font-weight: 700;
 }
 
-.text-light small {
-	color: #fff;
-}
