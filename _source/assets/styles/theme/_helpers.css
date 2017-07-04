@@ -24,3 +24,28 @@
 	clip: rect(0, 0, 0, 0);
 	border: 0;
 }
+
+.left-float {
+	float: left;
+}
+
+.right-float {
+	float: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.text-light {
+	color: rgba(255, 255, 255, .80);
+}
+
+.colored {
+	color: #33bfd0!important;
+	opacity: 1!important;
+}

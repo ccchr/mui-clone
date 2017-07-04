@@ -4,22 +4,26 @@
 
  ---------------------------------------------------------------------------- */
 
-.portfolio-item .portfolio-desc {
-	margin-top: 15px;
-}
-
-.portfolio-item .portfolio-desc:first-child {
-	margin-top: 0;
-}
-
-.portfolio-item .portfolio-desc .portfolio-name {
-	transition: all .2s ease;
-}
-
-.portfolio-item .portfolio-desc a:hover .portfolio-name {
-	color: #33bfd0;
-}
-
-.portfolio-item .portfolio-desc .portfolio-category+.portfolio-name {
-	margin-top: 3px;
+.portfolio-item {
+	.portfolio-desc {
+		margin-top: 15px;
+		&:first-child {
+			margin-top: 0;
+		}
+		.portfolio-name {
+			transition: all .2s ease;
+		}
+		a {
+			&:hover {
+				.portfolio-name {
+					color: #33bfd0;
+				}
+			}
+		}
+		.portfolio-category {
+			+ .portfolio-name {
+				margin-top: 3px;
+			}
+		}
+	}
 }

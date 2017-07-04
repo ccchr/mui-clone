@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>
-	{% if page.name == 'index.html' %}
+	{% if page.title == site.name %}
 		{{ site.name }}
 	{% else %}
 		{{ page.title }} - {{ site.name }}

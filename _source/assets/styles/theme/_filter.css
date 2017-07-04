@@ -10,64 +10,55 @@
 	text-align: center;
 	padding: 30px 20px;
 	height: auto;
-	width: calc(100%-40px);
+	width: calc(100% - 40px);
 	overflow: hidden;
-}
-
-.filter.align-left {
-	text-align: left;
-	padding: 30px 0;
-}
-
-.filter.align-right {
-	text-align: right;
-	padding: 30px 0;
-}
-
-.filter.filter-grey {
-	background: #f5f6f7;
-	padding: 30px 20px;
-}
-
-.filter.filter-dark {
-	background: #1a1a1a;
-	padding: 30px 20px;
-}
-
-#hero.hero-full .filter,
-#hero.hero-big .filter {
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	li {
+		display: inline-block;
+		margin: 0 8px;
+		position: relative;
+		&:after {
+			content: "";
+			width: calc(100% + 2px);
+			height: 2px;
+			background: #000;
+			position: absolute;
+			bottom: 10px;
+			left: -1px;
+			opacity: 0;
+			transition: all .3s ease;
+			z-index: 0;
+		}
+	}
+	&.align-left {
+		text-align: left;
+		padding: 30px 0;
+		li {
+			margin: 0 16px 0 0;
+		}
+	}
+	&.align-right {
+		text-align: right;
+		padding: 30px 0;
+	}
+	&.filter-grey {
+		background: #f5f6f7;
+		padding: 30px 20px;
+	}
+	&.filter-dark {
+		background: #1a1a1a;
+		padding: 30px 20px;
+	}
+	#hero.hero-full &,
+	#hero.hero-big & {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
 }
 
 div[class*='spacer-']+.filter:not(.filter-grey):not(.filter-dark) {
 	padding-top: 0;
 }
-
-.filter li {
-	display: inline-block;
-	margin: 0 8px;
-	position: relative;
-}
-
-.filter.align-left li {
-	margin: 0 16px 0 0;
-}
-
-.filter li:after {
-	content: "";
-	width: calc(100%+2px);
-	height: 2px;
-	background: #000;
-	position: absolute;
-	bottom: 10px;
-	left: -1px;
-	opacity: 0;
-	transition: all .3s ease;
-	z-index: 0;
-}
-
 .filter.filter-dark li:after,
 .filter.text-light li:after {
 	background: #fff;

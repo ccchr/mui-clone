@@ -1,0 +1,198 @@
+/* Forms
+ ---------------------------------------------------------------------------- */
+
+::placeholder {
+	color: #1a1a1a;
+	.text-light & {
+		color: #fff;
+	}
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+textarea {
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	line-height: 22px;
+	height: 22px;
+	width: 100%;
+	max-width: calc(100% - 22px);
+	color: #1a1a1a;
+	padding: 10px;
+	transition: all 200ms ease;
+	border-radius: 0;
+	resize: none;
+	&:focus {
+		border-color: #1a1a1a;
+	}
+	.text-light & {
+		border-color: #3d3d3d;
+		color: #fff;
+		background: #0f0f0f;
+		&:focus {
+			border-color: #fff;
+		}
+	}
+
+}
+
+input.false[type=text],
+input.false[type=password]:focus,
+input.false[type=email],
+textarea.false {
+	border-color: #fa4d5a;
+}
+
+textarea {
+	min-height: 100px;
+}
+
+input[type=submit],
+input[type=button],
+button {
+	cursor: pointer;
+	border-radius: 0;
+	display: inline-block;
+	font-family: Lato;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 22px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 5px;
+	transition: all .2s ease;
+	color: #fff;
+	padding: 10px 40px;
+	background: #1a1a1a;
+	border: none;
+	position: relative;
+	top: -1px;
+	.text-light & {
+		background: #fff;
+		color: #1a1a1a;
+	}
+	&:hover {
+		background: #33bfd0;
+		color: #fff;
+	}
+}
+
+select {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	font-family: Montserrat;
+	font-size: 11px;
+	font-weight: 400;
+	height: 44px;
+	width: auto;
+	padding: 8px;
+	color: #1a1a1a;
+	border-radius: 0;
+	min-width: 120px;
+	background-image: url(../assets/select-arrow.png);
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: 16px 6px;
+	&.full-width {
+		width: 100%;
+		max-width: 100%;
+	}
+	&:focus {
+		border-color: #1a1a1a;
+	}
+	.text-light & {
+		border-color: #3d3d3d;
+		color: #fff;
+		background: #0f0f0f;
+		background-image: url(../assets/select-arrow-light.png);
+		&:focus {
+			border-color: #fff;
+		}
+	}
+	option {
+		cursor: pointer;
+		padding: 5px 7px;
+	}
+}
+
+label {
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: -.02em;
+	width: 100%;
+	color: #1a1a1a;
+	display: block;
+	.text-light & {
+		color: #fff;
+	}
+	abbr {
+		color: #33bfd0;
+		text-decoration: none;
+	}
+}
+
+.form-row.false label {
+	color: #fa4d5a;
+}
+
+input[type=radio]+label,
+input[type=checkbox]+label {
+	display: inline-block;
+	width: auto;
+	margin-left: 5px;
+}
+
+form {
+	margin-top: 30px;
+	.form-row {
+		margin-top: 20px;
+		position: relative;
+		&.hidden {
+			display: none;
+		}
+	}
+	.form-submit {
+		margin-top: 30px;
+	}
+}
+
+form .form-row.one-half:nth-child(2),
+form .form-row.two-third:nth-child(2),
+form .form-row.one-third:nth-child(2),
+form .form-row.one-third:nth-child(3),
+form .form-row.one-fourth:nth-child(2),
+form .form-row.one-fourth:nth-child(3),
+form .form-row.one-fourth:nth-child(4) {
+	margin-top: 0;
+}
+
+
+div form:first-child,
+form .form-row:first-child,
+div[class*='spacer-']+form {
+	margin-top: 0;
+}
+
+
+/* Chech formular */
+
+.check-error input[type=text],
+.check-error input[type=password],
+.check-error input[type=email],
+.check-error textarea,
+input[type=text].check-error,
+input[type=password].check-error,
+input[type=email].check-error,
+textarea.check-error {
+	border-color: #ff4b14;
+}
+
+.form-note {
+	display: none;
+}
