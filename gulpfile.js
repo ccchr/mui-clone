@@ -80,23 +80,15 @@ gulp.task('reload', ['html'], function() {
 // and _source (for future jekyll builds)
 
 gulp.task('styles', function() {
-	var plugins = [
-		$.postcssInlineComment(),
-		$.postcssImport(),
-		$.postcssColorFunction(),
-		$.postcssNested(),
-		$.postcssExtend(),
-		$.autoprefixer({browsers: ['last 2 versions']}),
-		$.cssnano()
-	];
-    return gulp.src('_source/assets/styles/_source.css')
-		.pipe($.postcss(plugins))
+    return gulp.src('_source/assets/styles/source.scss')
+		.pipe($.sass({includePaths: ['_source/assets/styles/_framework/']}).on('error', $.sass.logError))
 		.pipe($.rename('assets/styles/' + pkg.filename + '.css'))
 		.pipe(gulp.dest('_source/'))
-        .pipe(bs.reload({
+		.pipe($.cssnano())
+		.pipe(gulp.dest('_deploy/'))
+		.pipe(bs.reload({
             stream: true
-        }))
-        .pipe(gulp.dest('_deploy/'));
+        }));
 });
 
 
@@ -120,8 +112,7 @@ gulp.task('watch', function() {
 
 	// watch for CSS changes and trigger `styles`
     gulp.watch([
-		'_source/assets/styles/_source.css',
-		'_source/assets/styles/theme/**.css'
+		'_source/assets/styles/**/**.*'
 
 	], ['styles']);
 
@@ -161,4 +152,4 @@ gulp.task('build', ['html', 'scripts', 'styles']);
 // running `gulp` will compile the PostCSS, compile the jekyll site,
 // launch BrowserSync & watch files
 
-gulp.task('default', ['reload', 'serve', 'watch']);
+gulp.task('default', ['styles', 'scripts', 'reload', 'serve', 'watch']);
