@@ -1,6 +1,12 @@
 ---
 layout: default
 title: Monogram
-redirectTo: docs
 ---
-<!-- You really shouldn't be here, but if you're reading this, hi 😊 -->
+<h1>Monogram UI</h1>
+<ul>
+	{% for page in site.pages %}
+		<li>
+			<a href="{{ page.url }}">{{ page.title }}</a>
+		</li>
+	{% endfor %}
+</ul>
