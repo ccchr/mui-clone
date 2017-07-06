@@ -46,8 +46,8 @@ $nav-height: 3.25rem !default;
   }
 }
 
-.nav-item a,
-a.nav-item {
+.nav-item a:not(.button),
+a.nav-item:not(.button) {
   color: $text-light;
 
   &:hover {

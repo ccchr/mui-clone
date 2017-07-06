@@ -83,14 +83,12 @@
   ol {
     list-style: decimal outside;
     margin-left: 2em;
-    margin-right: 2em;
     margin-top: 1em;
   }
 
   ul {
     list-style: disc outside;
     margin-left: 2em;
-    margin-right: 2em;
     margin-top: 1em;
 
     ul {
@@ -107,6 +105,18 @@
     margin-left: 2em;
   }
 
+  figure {
+    text-align: center;
+
+    img {
+      display: inline-block;
+    }
+
+    figcaption {
+      font-style: italic;
+    }
+  }
+
   pre {
     @include overflow-touch;
 
@@ -114,6 +124,11 @@
     padding: 1.25em 1.5em;
     white-space: pre;
     word-wrap: normal;
+  }
+
+  sup,
+  sub {
+    font-size: 70%;
   }
 
   table {
