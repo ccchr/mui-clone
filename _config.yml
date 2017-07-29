@@ -12,7 +12,7 @@ markdown: kramdown
 # incremental: true
 
 exclude:
-  - main.built.js
+  - assets/styles/source.scss
 
 plugins: [jekyll-email-protect, jekyll-last-modified-at]
 
