@@ -1,172 +1,168 @@
 .tabs {
-  @include block;
-  @include overflow-touch;
-  @include unselectable;
+	@include block;
+	@include overflow-touch;
+	@include unselectable;
+	align-items: stretch;
+	display: flex;
+	font-size: $size-normal;
+	justify-content: space-between;
+	overflow: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
 
-  align-items: stretch;
-  display: flex;
-  font-size: $size-normal;
-  justify-content: space-between;
-  overflow: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
+	a {
+		align-items: center;
+		border-bottom: 1px solid $border;
+		color: $text;
+		display: flex;
+		justify-content: center;
+		margin-bottom: -1px;
+		padding: 0.5em 1em;
+		vertical-align: top;
 
-  a {
-    align-items: center;
-    border-bottom: 1px solid $border;
-    color: $text;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -1px;
-    padding: 0.5em 1em;
-    vertical-align: top;
+		&:hover {
+			border-bottom-color: $text-strong;
+			color: $text-strong;
+		}
+	}
 
-    &:hover {
-      border-bottom-color: $text-strong;
-      color: $text-strong;
-    }
-  }
+	li {
+		display: block;
 
-  li {
-    display: block;
+		&.is-active {
+			a {
+				border-bottom-color: $primary;
+				color: $primary;
+			}
+		}
+	}
 
-    &.is-active {
-      a {
-        border-bottom-color: $primary;
-        color: $primary;
-      }
-    }
-  }
+	ul {
+		align-items: center;
+		border-bottom: 1px solid $border;
+		display: flex;
+		flex-grow: 1;
+		flex-shrink: 0;
+		justify-content: flex-start;
 
-  ul {
-    align-items: center;
-    border-bottom: 1px solid $border;
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    justify-content: flex-start;
+		&.is-left {
+			padding-right: 0.75em;
+		}
 
-    &.is-left {
-      padding-right: 0.75em;
-    }
+		&.is-center {
+			flex: none;
+			justify-content: center;
+			padding-left: 0.75em;
+			padding-right: 0.75em;
+		}
 
-    &.is-center {
-      flex: none;
-      justify-content: center;
-      padding-left: 0.75em;
-      padding-right: 0.75em;
-    }
+		&.is-right {
+			justify-content: flex-end;
+			padding-left: 0.75em;
+		}
+	}
 
-    &.is-right {
-      justify-content: flex-end;
-      padding-left: 0.75em;
-    }
-  }
+	.icon {
+		&:first-child {
+			margin-right: 0.5em;
+		}
 
-  .icon {
-    &:first-child {
-      margin-right: 0.5em;
-    }
+		&:last-child {
+			margin-left: 0.5em;
+		}
+	}
+	// Alignment
+	&.is-centered {
+		ul {
+			justify-content: center;
+		}
+	}
 
-    &:last-child {
-      margin-left: 0.5em;
-    }
-  }
+	&.is-right {
+		ul {
+			justify-content: flex-end;
+		}
+	}
+	// Styles
+	&.is-boxed {
+		a {
+			border: 1px solid transparent;
+			border-radius: $radius $radius 0 0;
 
-  // Alignment
-  &.is-centered {
-    ul {
-      justify-content: center;
-    }
-  }
+			&:hover {
+				background-color: $background;
+				border-bottom-color: $border;
+			}
+		}
 
-  &.is-right {
-    ul {
-      justify-content: flex-end;
-    }
-  }
+		li {
+			&.is-active {
+				a {
+					background-color: $white;
+					border-color: $border;
+					border-bottom-color: transparent !important;
+				}
+			}
+		}
+	}
 
-  // Styles
-  &.is-boxed {
-    a {
-      border: 1px solid transparent;
-      border-radius: $radius $radius 0 0;
+	&.is-fullwidth {
+		li {
+			flex-grow: 1;
+			flex-shrink: 0;
+		}
+	}
 
-      &:hover {
-        background-color: $background;
-        border-bottom-color: $border;
-      }
-    }
+	&.is-toggle {
+		a {
+			border: 1px solid $border;
+			margin-bottom: 0;
+			position: relative;
 
-    li {
-      &.is-active {
-        a {
-          background-color: $white;
-          border-color: $border;
-          border-bottom-color: transparent !important;
-        }
-      }
-    }
-  }
+			&:hover {
+				background-color: $background;
+				border-color: $border-hover;
+				z-index: 2;
+			}
+		}
 
-  &.is-fullwidth {
-    li {
-      flex-grow: 1;
-      flex-shrink: 0;
-    }
-  }
+		li {
+			& + li {
+				margin-left: -1px;
+			}
 
-  &.is-toggle {
-    a {
-      border: 1px solid $border;
-      margin-bottom: 0;
-      position: relative;
+			&:first-child a {
+				border-radius: $radius 0 0 $radius;
+			}
 
-      &:hover {
-        background-color: $background;
-        border-color: $border-hover;
-        z-index: 2;
-      }
-    }
+			&:last-child a {
+				border-radius: 0 $radius $radius 0;
+			}
 
-    li {
-      & + li {
-        margin-left: -1px;
-      }
+			&.is-active {
+				a {
+					background-color: $primary;
+					border-color: $primary;
+					color: $primary-invert;
+					z-index: 1;
+				}
+			}
+		}
 
-      &:first-child a {
-        border-radius: $radius 0 0 $radius;
-      }
+		ul {
+			border-bottom: none;
+		}
+	}
+	// Sizes
+	&.is-small {
+		font-size: $size-small;
+	}
 
-      &:last-child a {
-        border-radius: 0 $radius $radius 0;
-      }
+	&.is-medium {
+		font-size: $size-medium;
+	}
 
-      &.is-active {
-        a {
-          background-color: $primary;
-          border-color: $primary;
-          color: $primary-invert;
-          z-index: 1;
-        }
-      }
-    }
-
-    ul {
-      border-bottom: none;
-    }
-  }
-
-  // Sizes
-  &.is-small {
-    font-size: $size-small;
-  }
-
-  &.is-medium {
-    font-size: $size-medium;
-  }
-
-  &.is-large {
-    font-size: $size-large;
-  }
+	&.is-large {
+		font-size: $size-large;
+	}
 }

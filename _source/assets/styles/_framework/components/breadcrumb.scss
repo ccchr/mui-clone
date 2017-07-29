@@ -1,110 +1,109 @@
 .breadcrumb {
-  @include block;
-  @include unselectable;
+	@include block;
+	@include unselectable;
+	align-items: stretch;
+	display: flex;
+	font-size: $size-normal;
+	overflow: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
 
-  align-items: stretch;
-  display: flex;
-  font-size: $size-normal;
-  overflow: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
+	a {
+		align-items: center;
+		color: $text-light;
+		display: flex;
+		justify-content: center;
+		padding: 0.5em 0.75em;
 
-  a {
-    align-items: center;
-    color: $text-light;
-    display: flex;
-    justify-content: center;
-    padding: 0.5em 0.75em;
+		&:hover {
+			color: $link-hover;
+		}
+	}
 
-    &:hover {
-      color: $link-hover;
-    }
-  }
+	li {
+		align-items: center;
+		display: flex;
 
-  li {
-    align-items: center;
-    display: flex;
+		&.is-active {
+			a {
+				color: $text-strong;
+				cursor: default;
+				pointer-events: none;
+			}
+		}
 
-    &.is-active {
-      a {
-        color: $text-strong;
-        cursor: default;
-        pointer-events: none;
-      }
-    }
+		& + li:before {
+			color: $text;
+			content: "/";
+		}
+	}
 
-    & + li:before {
-      color: $text;
-      content: "/";
-    }
-  }
+	ol,
+	ul {
+		align-items: center;
+		display: flex;
+		flex-grow: 1;
+		flex-shrink: 0;
+		justify-content: flex-start;
+	}
 
-  ul, ol {
-    align-items: center;
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    justify-content: flex-start;
-  }
+	.icon {
+		&:first-child {
+			margin-right: 0.5em;
+		}
 
-  .icon {
-    &:first-child {
-      margin-right: 0.5em;
-    }
+		&:last-child {
+			margin-left: 0.5em;
+		}
+	}
+	// Alignment
+	&.is-centered {
+		ol,
+		ul {
+			justify-content: center;
+		}
+	}
 
-    &:last-child {
-      margin-left: 0.5em;
-    }
-  }
+	&.is-right {
+		ol,
+		ul {
+			justify-content: flex-end;
+		}
+	}
+	// Sizes
+	&.is-small {
+		font-size: $size-small;
+	}
 
-  // Alignment
-  &.is-centered {
-    ol, ul {
-      justify-content: center;
-    }
-  }
+	&.is-medium {
+		font-size: $size-medium;
+	}
 
-  &.is-right {
-    ol, ul {
-      justify-content: flex-end;
-    }
-  }
+	&.is-large {
+		font-size: $size-large;
+	}
+	// Styles
+	&.has-arrow-separator {
+		li + li:before {
+			content: "→";
+		}
+	}
 
-  // Sizes
-  &.is-small {
-    font-size: $size-small;
-  }
+	&.has-bullet-separator {
+		li + li:before {
+			content: "•";
+		}
+	}
 
-  &.is-medium {
-    font-size: $size-medium;
-  }
+	&.has-dot-separator {
+		li + li:before {
+			content: "·";
+		}
+	}
 
-  &.is-large {
-    font-size: $size-large;
-  }
-
-  // Styles
-  &.has-arrow-separator {
-    li + li:before {
-      content: "→";
-    }
-  }
-
-  &.has-bullet-separator {
-    li + li:before {
-      content: "•";
-    }
-  }
-
-  &.has-dot-separator {
-    li + li:before {
-      content: "·";
-    }
-  }
-
-  &.has-succeeds-separator {
-    li + li:before {
-      content: "≻";
-    }
-  }
+	&.has-succeeds-separator {
+		li + li:before {
+			content: "≻";
+		}
+	}
 }
