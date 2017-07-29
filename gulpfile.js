@@ -86,9 +86,7 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('_source/'))
 		.pipe($.cssnano())
 		.pipe(gulp.dest('_deploy/'))
-		.pipe(bs.reload({
-            stream: true
-        }));
+		.pipe(bs.stream());
 });
 
 
@@ -112,7 +110,8 @@ gulp.task('watch', function() {
 
 	// watch for CSS changes and trigger `styles`
     gulp.watch([
-		'_source/assets/styles/**/**.*'
+		'_source/assets/styles/_framework/**/**',
+		'_source/assets/styles/source.scss'
 
 	], ['styles']);
 
