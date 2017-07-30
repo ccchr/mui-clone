@@ -1,97 +1,56 @@
- @charset "utf-8";
+@charset "utf-8";
 /*!
- *
- *    //\\
- *   //XX\\
- *
- *   Monogram UI
- *   Copyright (c) 2017 Monogram. All rights reserved.
- *   ----------------------------------------------------------------------------
- *   Made by Monogram. http://monogram.design/
- *
- *   Contains open-source software. http://monogram.design/licenses.txt
- */
-
-// bulma.io v0.4.3 | MIT License | github.com/jgthms/bulma
-
-//   !! These load in a specific order. Don't change it unless you have to !!
-
-@import "utilities/custom-variables";
+*
+*  //\\
+* //XX\\
+*
+* Monogram UI
+* Copyright (c) 2017 Monogram. All rights reserved.
+* -----------------------------------------------------------------------------
+* Made by Monogram. http://monogram.design/
+*
+* Contains open-source software. http://monogram.design/licenses.txt
+*/
 
 // -----------------------------------------------------------------------------
-//   UTILITIES
-//
-// · initial-variables
-// · functions
-// · derived-variables
-// · animations
-// · mixins
-// · controls
+// BULMA
+// Requires the "m-bulma" submodule to be included in _framework folder
 
 @import "utilities/_all";
-
-
-// -----------------------------------------------------------------------------
-//   BASE
-//
-// · minireset
-// · generic
-// · helpers
-
 @import "base/_all";
-
-
-// -----------------------------------------------------------------------------
-//   ELEMENTS
-//
-// · box
-// · button
-// · content
-// · form
-// · icon
-// · image
-// · notification
-// · progress
-// · table
-// · tag
-// · title
-// · other
-
 @import "elements/_all";
-
-
-// -----------------------------------------------------------------------------
-//   COMPONENTS
-//
-// · card
-// · level
-// · media
-// · menu
-// · message
-// · modal
-// · nav
-// · pagination
-// · panel
-// · tabs
-
 @import "components/_all";
-
-
-// -----------------------------------------------------------------------------
-//   GRID
-//
-// · columns
-// · tiles
-
 @import "grid/_all";
-
-
-// -----------------------------------------------------------------------------
-//   LAYOUT
-//
-// · hero
-// · section
-// · footer
-
 @import "layout/_all";
 
+// -----------------------------------------------------------------------------
+// CUSTOM VARIABLES & STYLES
+// Override all Bulma variables for this specific project below.
+// Add custom CSS here if needed. All @import paths are relative to _framework/
+
+$black: #1B1914;
+
+$light: #FFF7E0;
+$primary: $light;
+
+$body-background: $black;
+$body-size: 18px;
+
+$background: $black;
+
+$family-primary: Source Sans Pro, sans-serif;
+$weight-light: 300;
+$weight-normal: 300;
+$weight-semibold: 400;
+$weight-bold: 400;
+$size-2: 2.5rem;
+
+$link: $primary;
+$link-hover: #FFF;
+$link-hover-border: #FFF;
+
+$text: transparentize($light, 0.6);
+$text-light: transparentize($light, 0.4);
+$text-strong: $light;
+
+$easing: ease;
