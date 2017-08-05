@@ -9,8 +9,12 @@ source: _source
 destination: _deploy
 permalink: pretty
 markdown: kramdown
+
+# Enable this for large websites. Enabling this builds only changed files.
 # incremental: true
 
+# Prevents Jekyll from moving CSS source file to _deploy. The underscore method
+# didn't work because then SASS ignores the file as well.
 exclude:
   - assets/styles/source.scss
 
@@ -21,21 +25,50 @@ filePath: /docs/examples/files/uploads
 # Client Information
 # ------------------------------------------------------------------------------
 
-# Basic
+# BASIC
+
+# Used in site titles and stuff.
 name: Monogram
-shortname: m
+
+# Used in site file names. Sync this with the "name" from package.json
+shortname: monogram-ui
+
+# Used in footer copyrights and code licenses, etc.
 legal: Monogram, LLC
+
+# Required because some links and metadata needs absolute URLs to work.
 domain: "http://monogram.design/"
 
-# Contact
+# CONTACT
+
+# Writing a phone number with spaces can be manipulated easily, by using a
+# liquid replace filter to change the spaces to periods or dashes as needed.
+
 phone: 415 997 7754
 email: hello@monogram.design
 
-# Meta
+# SOCIAL
+
+# Put the entire URL of the social media accounts here. Retain "false" value if
+# this client does not have an account. Then use an {% if facebook != false %}
+# check to write social media links in the site.
+
+facebook: false
+twitter: false
+yelp: false
+instagram: false
+youtube: false
+google-plus: false
+
+# META/SEO
 description: "Design agency for the human experience. We design experiences that improve lives and move people."
 keywords: "design,atlanta,web,agency,graphic,print,marketing"
 
+# Set Google Analytics to tracking ID to enable (e.g. UA-90232734-7)
 google-analytics: false
-google-verification: Oxo4aJhF8Wt5tVkJ3K1jFWyPQGcWAiNneo-4lD4v3-0
 
-chanhgefreq: weekly
+# Set Google site verification (optional)
+google-verification: false
+
+# Used to generate sitemaps and stuff.
+changefreq: weekly
