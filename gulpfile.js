@@ -82,9 +82,9 @@ gulp.task('reload', ['html'], function() {
 gulp.task('styles', function() {
     return gulp.src('_source/assets/styles/source.scss')
 		.pipe($.sass({includePaths: ['_source/assets/styles/_framework/']}).on('error', $.sass.logError))
-		.pipe($.rename('assets/styles/' + pkg.filename + '.css'))
-		.pipe(gulp.dest('_source/'))
+		.pipe($.rename('assets/styles/' + pkg.name + '.css'))
 		.pipe($.cssnano())
+		.pipe(gulp.dest('_source/'))
 		.pipe(gulp.dest('_deploy/'))
 		.pipe(bs.stream());
 });
@@ -93,7 +93,7 @@ gulp.task('styles', function() {
 // SCRIPTS
 // -----------------------------------------------------------------------------
 
-gulp.task('scripts', ['jekyll-build'], function() {
+gulp.task('scripts', function() {
 
 	gulp.src('_deploy/assets/scripts/*.js')
 		.pipe($.uglify({
@@ -116,7 +116,7 @@ gulp.task('watch', function() {
 	], ['styles']);
 
 	// watch JavaScript
-	gulp.watch('_scripts/assets/scripts/**', ['scripts']);
+	gulp.watch('_deploy/assets/scripts/**.js', ['scripts']);
 
 	// watch for any non-CSS changes and trigger `reload`
     gulp.watch([
@@ -151,4 +151,4 @@ gulp.task('build', ['html', 'scripts', 'styles']);
 // running `gulp` will compile the PostCSS, compile the jekyll site,
 // launch BrowserSync & watch files
 
-gulp.task('default', ['styles', 'scripts', 'reload', 'serve', 'watch']);
+gulp.task('default', ['build', 'serve', 'watch']);

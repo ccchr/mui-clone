@@ -21,10 +21,10 @@
   "license": "CC-BY-NC-ND-4.0",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/monogram/monogram-ui.git"
+    "url": "https://github.com/monogramdesign/monogram-ui.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/monogram/monogram-ui/issues"
+    "url": "https://github.com/monogramdesign/monogram-ui/issues"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +47,5 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.1",
     "node-sass": "^4.5.3"
-  },
-  "filename": "m"
+  }
 }
