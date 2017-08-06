@@ -55,7 +55,9 @@ gulp.task('html', ['jekyll-build'], function() {
 		.pipe($.htmlhint.reporter())
 		.pipe($.minifyInline())
         .pipe($.htmlmin({
-            collapseWhitespace: true,
+			collapseWhitespace: true,
+			collapseInlineTagWhitespace: false,
+			conservativeCollapse: true,
 			minifyURLs: true,
 			removeComments: true,
 			quoteCharacter: "",
