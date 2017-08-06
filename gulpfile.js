@@ -1,7 +1,7 @@
 //
 // -----------------------------------------------------------------------------
 // Monogram / Gulpfile
-// Copyright (C) 2017 Monogram (http://monogram.design)
+// Copyright (C) 2017 Monogram (https://monogram.design)
 // -----------------------------------------------------------------------------
 //
 
@@ -48,7 +48,7 @@ gulp.task('jekyll-build', function(done) {
 
 gulp.task('html', ['jekyll-build'], function() {
 
-	// HTML linting, cleaning, and code styling
+	// HTML linting and minification
 
     gulp.src('_deploy/**/*.html')
 		.pipe($.htmlhint('htmlhintrc'))
@@ -83,7 +83,10 @@ gulp.task('reload', ['html'], function() {
 
 gulp.task('styles', function() {
     return gulp.src('_source/assets/styles/source.scss')
-		.pipe($.sass({includePaths: ['_source/assets/styles/_framework/']}).on('error', $.sass.logError))
+		.pipe(
+			$.sass({
+				includePaths: ['_source/assets/styles/_framework/']
+			}).on('error', $.sass.logError))
 		.pipe($.rename('assets/styles/' + pkg.name + '.css'))
 		.pipe($.cssnano())
 		.pipe(gulp.dest('_source/'))
@@ -140,7 +143,7 @@ gulp.task('serve', function() {
         server: {
             baseDir: '_deploy'
         },
-		port: 3020,
+		port: 3020, // change this port for every client (~3000-3099)
         notify: false
     });
 });
